@@ -1,0 +1,5 @@
+pandas
+gspread
+requests
+psycopg[binary]
+sqlalchemy

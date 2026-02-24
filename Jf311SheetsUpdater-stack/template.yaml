@@ -1,0 +1,26 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  LambdaFunctionFunction311SheetsUpdater:
+    Type: AWS::Serverless::Function
+    Properties:
+      MemorySize: 128
+      Description: ''
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
+      Handler: lambda_function.lambda_handler
+      Role: arn:aws:iam::609870412389:role/service-role/311SheetsUpdater-role-hkxtwzf8
+      FileSystemConfigs: []
+      FunctionName: 311SheetsUpdater
+      Runtime: python3.14
+      PackageType: Zip
+      LoggingConfig:
+        LogFormat: Text
+        LogGroup: /aws/lambda/311SheetsUpdater
+      RecursiveLoop: Terminate
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+        - x86_64
+      Tracing: PassThrough
+      CodeUri: LambdaFunctionFunction311SheetsUpdater

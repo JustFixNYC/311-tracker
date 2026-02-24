@@ -1,0 +1,36 @@
+Transform: AWS::Serverless-2016-10-31
+Parameters: {}
+Resources:
+  LambdaFunctionFunction311TypeformWebhook:
+    Type: AWS::Serverless::Function
+    Properties:
+      MemorySize: 128
+      Description: ''
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
+      Handler: index.handler
+      Role: arn:aws:iam::609870412389:role/service-role/311TypeformWebhook-role-nu57yzl0
+      FileSystemConfigs: []
+      FunctionName: 311TypeformWebhook
+      Runtime: nodejs24.x
+      PackageType: Zip
+      LoggingConfig:
+        LogFormat: Text
+        LogGroup: /aws/lambda/311TypeformWebhook
+      RecursiveLoop: Terminate
+      Environment:
+        Variables:
+          UPT_FORM_ID: UrIJg4oD
+          UPT_TEXTIT_DATE_FIELD: upt_311_form_date
+          UPT_TEXTIT_311_SR_FIELD: upt_311_sr_number
+          UPT_TEXTIT_GROUP: 13099c82-e3bf-42bc-b385-7ed8c05506de
+          TYPEFORM_SECRET_NAME: Jf311TypeformWebhookSecret
+          TEXTIT_SECRET_NAME: JFTextitToken
+          AWS_REGION_NAME: us-east-1
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+        - x86_64
+      Tracing: PassThrough
+      CodeUri: LambdaFunctionFunction311TypeformWebhook
