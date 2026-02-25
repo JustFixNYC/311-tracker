@@ -4,7 +4,7 @@ import {
 } from "@aws-sdk/client-secrets-manager";
 import crypto from "crypto";
 import TextitClient from "./textit-client.mjs";
-import { handleTypeformResponse } from "./typeform.mjs";
+import { handleUptResponse } from "./upt.mjs";
 
 const smClient = new SecretsManagerClient({
   region: process.env.AWS_REGION_NAME,
@@ -31,6 +31,34 @@ await getSecrets(process.env.TEXTIT_SECRET_NAME);
 
 // Saves some resources to define here outside functions
 const textitClient = new TextitClient(secretsData.textitToken);
+
+const handleTypeformResponse = async (event, textitClient) => {
+  // Implementation for handling Typeform response
+
+  // Parse the webhook payload
+  const payload = JSON.parse(event.body);
+
+  if (payload.event_type !== "form_response") {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        error: `invalid event_type. Received ${payload.event_type}, expected "form_response"`,
+      }),
+    };
+  }
+
+  const formId = payload.form_response.form_id;
+
+  //  Handle forms for each camapign
+  switch (formId) {
+    case process.env.UPT_FORM_ID:
+      await handleUptResponse(payload, textitClient);
+      break;
+
+    default:
+      console.log(`Received unhandled form ID: ${formId}`);
+  }
+};
 
 export const handler = async (event, context) => {
   console.log("Event: ", JSON.stringify(event, null, 2));
