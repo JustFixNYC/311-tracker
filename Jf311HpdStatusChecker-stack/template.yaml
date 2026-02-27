@@ -1,0 +1,58 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  LambdaFunctionFunction311HpdStatusChecker:
+    Type: AWS::Serverless::Function
+    Properties:
+      MemorySize: 128
+      Description: ''
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
+      Handler: index.handler
+      Role: arn:aws:iam::609870412389:role/service-role/311HpdStatusChecker-role-opj0bwe8
+      FileSystemConfigs: []
+      FunctionName: 311HpdStatusChecker
+      Runtime: nodejs24.x
+      PackageType: Zip
+      LoggingConfig:
+        LogFormat: Text
+        LogGroup: /aws/lambda/311HpdStatusChecker
+      RecursiveLoop: Terminate
+      Environment:
+        Variables:
+          DEEPL_SECRET_NAME: Jf311TrackerDeepLApiToken
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+        - x86_64
+      Tracing: PassThrough
+      CodeUri: LambdaFunctionFunction311HpdStatusChecker
+      Events:
+        Jf311HpdStatusCheckerGETcheckHpdComplaintStatus:
+          Type: Api
+          Properties:
+            Path: /checkHpdComplaintStatus
+            Method: GET
+            RestApiId: !Ref Jf311HpdStatusChecker
+  Jf311HpdStatusChecker:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: !Sub
+        - ${ResourceName} From Stack ${AWS::StackName}
+        - ResourceName: Jf311HpdStatusChecker
+      StageName: Prod
+      DefinitionBody:
+        openapi: '3.0'
+        info: {}
+        paths:
+          /checkHpdComplaintStatus:
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri: !Sub arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunctionFunction311HpdStatusChecker.Arn}/invocations
+              responses: {}
+      EndpointConfiguration: REGIONAL
+      TracingEnabled: true
+      Cors:
+        MaxAge: 5
