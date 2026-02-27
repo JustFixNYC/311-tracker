@@ -2,13 +2,14 @@ import {
   SecretsManagerClient,
   GetSecretValueCommand,
 } from "@aws-sdk/client-secrets-manager";
+import { S3Client } from "@aws-sdk/client-s3";
 import crypto from "crypto";
 import TextitClient from "./textit-client.mjs";
 import { handleUptResponse } from "./upt.mjs";
 
-const smClient = new SecretsManagerClient({
-  region: process.env.AWS_REGION_NAME,
-});
+const config = { region: process.env.AWS_REGION_NAME };
+const s3Client = new S3Client(config)
+const smClient = new SecretsManagerClient(config);
 
 // Fetch the secret once during the Lambda function's init phase (cold start)
 let secretsData;
@@ -32,7 +33,7 @@ await getSecrets(process.env.TEXTIT_SECRET_NAME);
 // Saves some resources to define here outside functions
 const textitClient = new TextitClient(secretsData.textitToken);
 
-const handleTypeformResponse = async (event, textitClient) => {
+const handleTypeformResponse = async (event, textitClient, s3Client) => {
   // Implementation for handling Typeform response
 
   // Parse the webhook payload
@@ -52,7 +53,7 @@ const handleTypeformResponse = async (event, textitClient) => {
   //  Handle forms for each camapign
   switch (formId) {
     case process.env.UPT_FORM_ID:
-      await handleUptResponse(payload, textitClient);
+      await handleUptResponse(payload, textitClient, s3Client);
       break;
 
     default:
@@ -72,7 +73,7 @@ export const handler = async (event, context) => {
   }
 
   try {
-    await handleTypeformResponse(event, textitClient);
+    await handleTypeformResponse(event, textitClient, s3Client);
 
     // Return success response
     return {

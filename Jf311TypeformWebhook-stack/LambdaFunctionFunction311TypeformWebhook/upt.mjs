@@ -1,4 +1,5 @@
 import { getAnswerByRef, getHiddenField, toIsoLanguage } from "./typeform.mjs";
+import { uploadChecklist } from "./checklist.mjs";
 
 const ADDRESS_BUILDING_ID_MAP = {
   "237 West 18 Street, Manhattan": "30714",
@@ -99,7 +100,7 @@ const getHpdBuildingId = (address) => {
   return ADDRESS_BUILDING_ID_MAP[address] || "";
 };
 
-export const handleUptResponse = async (payload, textitClient) => {
+export const handleUptResponse = async (payload, textitClient, s3Client) => {
   console.log("Handling UPT response");
 
   const answers = payload.form_response.answers;
@@ -113,10 +114,12 @@ export const handleUptResponse = async (payload, textitClient) => {
   const langIso = toIsoLanguage(langQuestion || langHidden);
   const sr311 = getAnswerByRef(answers, "sr_311")?.text || "";
 
-  console.log({address, hpdBuildingId})
+  const checklistUrl = await uploadChecklist(answers, s3Client, "UPT 311 Checklist", "upt")
+
   const fields = {
     [process.env.UPT_TEXTIT_DATE_FIELD]: submittedAt,
     [process.env.UPT_TEXTIT_311_SR_FIELD]: sr311,
+    [process.env.UPT_TEXTIT_CHECKLIST_FIELD]: checklistUrl,
     hpd_building_id: hpdBuildingId,
   };
 
@@ -133,4 +136,5 @@ export const handleUptResponse = async (payload, textitClient) => {
     process.env.UPT_TEXTIT_GROUP,
   );
   console.log("Textit - addContactToGroup: ", resp2);
+
 };
