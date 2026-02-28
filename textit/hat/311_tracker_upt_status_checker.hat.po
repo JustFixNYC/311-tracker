@@ -1,4 +1,3 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
@@ -8,7 +7,7 @@ msgstr ""
 "POT-Creation-Date: 2026-02-27 22:33+0000\n"
 "Source-Flows: 15e52464-5f88-473e-b212-21c3dc8c3331\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"PO-Revision-Date: 2026-02-27 17:49-0500\n"
+"PO-Revision-Date: 2026-02-27 17:43-0500\n"
 "X-Generator: PO File Editor https://pofile.net/free-po-editor\n"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/dd188a58-8d94-4aa1-9a3d-e0bff03c8d56/text:0
@@ -17,12 +16,12 @@ msgstr "@results.webhook_retries"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/84ca9373-82ee-431c-95c3-9d2a5ee22ccc/name:0
 msgid "Closed"
-msgstr "Cerrado"
+msgstr "Fèmen"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/3f9d21ee-b8ba-4f59-afbe-12d84a0c31fa/name:0
 #: 311+Tracker+-+UPT+-+Status+Checker/7f01030f-eba0-4508-9af8-b16f2dbe1526/name:0
 msgid "Failure"
-msgstr "Fracaso"
+msgstr "Echèk"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/7d6901c9-41e9-440f-bd83-7ec8d02370f6/text:0
 msgid ""
@@ -30,9 +29,8 @@ msgid ""
 "you can fill out the form again to repeat the process. "
 "https://bit.ly/upt-311"
 msgstr ""
-"Genial, gracias. No volveremos a contactar con usted. Si tiene nuevos "
-"problemas de reparación, puede volver a rellenar el formulario para repetir "
-"el proceso. https://bit.ly/upt-311"
+"Trè bon, mèsi. Nou pap kontakte w ankò. Si ou gen nouvo pwoblèm reparasyon, "
+"ou ka ranpli fòm nan ankò pou repete pwosesis la. https://bit.ly/upt-311"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/2a5157b6-de87-41bf-8bc6-fefa55f41256/text:0
 msgid ""
@@ -40,9 +38,9 @@ msgid ""
 "on your 311 complaint (@fields.upt_311_sr_number) made on "
 "@(format_date(webhook.json.receivedDate, \"YYYY-MM-DD\"))"
 msgstr ""
-"Hola, soy JustFix, de la Unión de Inquilinos de Pinnacle. Hay novedades "
-"sobre su queja 311 (@fields.upt_311_sr_number) presentada el "
-"@(format_date(webhook.json.receivedDate, \"AAAA-MM-DD\"))."
+"Bonjou, se JustFix pou Inyon Lwaye Pinnacle, gen yon mizajou sou plent 311 "
+"ou a (@fields.upt_311_sr_number) ki te fèt nan "
+"@(format_date(webhook.json.receivedDate, \"AAAA-MM-JJ\"))"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/342f3020-d872-4e38-b935-e87aea1c579f/text:0
 msgid ""
@@ -51,15 +49,14 @@ msgid ""
 "\n"
 "Reply \"1\" for yes, or \"2\" for no."
 msgstr ""
-"Si el Departamento de Policía de Houston (HPD) no ha inspeccionado todo lo "
-"que usted ha denunciado, deberá llamar nuevamente al 311 para presentar una "
-"nueva denuncia. ¿Tiene pensado llamar nuevamente al 311?\n"
+"Si HPD poko enspekte tout bagay ou gen plent pou yo, w ap bezwen rele 311 "
+"ankò pou w soumèt yon nouvo plent. Èske w planifye rele 311 ankò?\n"
 "\n"
-"Responda «1» para sí, o «2» para no."
+"Reponn \"1\" pou wi, oswa \"2\" pou non."
 
 #: 311+Tracker+-+UPT+-+Status+Checker/e03c8dd9-131c-49fe-8de3-92e1db1d4ad0/name:0
 msgid "No"
-msgstr "No"
+msgstr "Non"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/f5009b19-47b1-4d86-8959-4b015d23e3e8/text:0
 msgid ""
@@ -69,40 +66,39 @@ msgid ""
 "have complaints for.\n"
 "@fields.upt_checklist_url"
 msgstr ""
-"De acuerdo, nos pondremos en contacto con usted en breve para "
-"proporcionarle su nuevo número de solicitud de servicio 311. Puede "
-"consultar esta lista de verificación de los problemas que seleccionó al "
-"llamar al 311 y cuando el HPD realice su inspección para asegurarse de que "
-"inspeccionan todo aquello sobre lo que ha presentado quejas.\n"
+"Oke, n ap kontakte w byento pou ba w nouvo Nimewo Demann Sèvis 311 ou a. Ou "
+"ka gade lis verifikasyon sa a ki gen pwoblèm ou te chwazi yo lè w t ap rele "
+"311 la ak lè HPD ap fè enspeksyon an, pou asire w yo enspekte tout bagay ou "
+"te pote plent pou yo.\n"
 "@fields.upt_checklist_url"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/ef77e124-9987-4b8c-bea8-2bb96204f667/name:0
 msgid "Open"
-msgstr "Abrir"
+msgstr "Ouvè"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/27f4d648-b0af-4b16-a64e-7135450ec59d/name:0
 #: 311+Tracker+-+UPT+-+Status+Checker/2fa639d0-9519-4ab4-908b-9d8140a00f2e/name:0
 #: 311+Tracker+-+UPT+-+Status+Checker/99e5fee1-b109-4575-b284-025f67afd8e0/name:0
 #: 311+Tracker+-+UPT+-+Status+Checker/fcbf74d3-d7f1-4f7c-82b1-a3911d7fc798/name:0
 msgid "Other"
-msgstr "Otros"
+msgstr "Lòt"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/c0399fc6-fd3a-4d9d-aecc-0941035b4db4/text:0
 msgid "Sorry, we didn't understand your response."
-msgstr "Lo sentimos, no hemos entendido tu respuesta."
+msgstr "Dezole, nou pa t konprann repons ou."
 
 #: 311+Tracker+-+UPT+-+Status+Checker/7e93a221-a7ce-4a5d-b2b9-0f060d0f3233/name:0
 msgid "Status Change"
-msgstr "Cambio de estado"
+msgstr "Chanjman estati"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/6052fd8a-0f24-474f-8766-5929c1837569/name:0
 #: 311+Tracker+-+UPT+-+Status+Checker/99540915-62a6-4d94-be49-ba1847755b26/name:0
 msgid "Success"
-msgstr "Éxito"
+msgstr "Siksè"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/e86b2c31-9cca-4606-9fec-18502bff336b/name:0
 msgid "Try again"
-msgstr "Inténtalo de nuevo"
+msgstr "Eseye ankò"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/23972321-892e-41c9-a52c-8808b558e75e/text:0
 msgid ""
@@ -111,15 +107,13 @@ msgid ""
 "everything. \n"
 "@fields.upt_checklist_url"
 msgstr ""
-"Cuando el Departamento de Vivienda y Desarrollo Urbano (HPD) venga a "
-"inspeccionar tu departamento, puedes consultar esta lista de verificación "
-"con los problemas que seleccionaste para asegurarte de que sancionen todas "
-"las infracciones.\n"
+"Lè HPD vini enspekte apatman ou, ou ka konsilte lis verifikasyon sa a ki "
+"gen pwoblèm ou te chwazi yo pou asire yo mete vyolasyon pou tout bagay. \n"
 "@fields.upt_checklist_url"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/2169107b-8b00-4d8b-8276-a4c484cc6016/name:0
 msgid "Yes"
-msgstr "Sí"
+msgstr "Wi"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/3ee20047-d8bc-4859-bd63-6a7d352f9cbb/text:0
 msgid ""
@@ -164,27 +158,9 @@ msgid ""
 "n\n"
 "@webhook.json.statusDescriptionTranslated"
 msgstr ""
-"Su queja 311 ha sido cerrada por el Departamento de Policía de Houston "
+"Plent 311 ou a fèmen pa HPD ak deskripsyon sa a: \n"
 "\n"
 "\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"n\n"
 "@webhook.json.statusDescriptionTranslated"
 
 #: 311+Tracker+-+UPT+-+Status+Checker/06e9e646-37f5-42f1-80c9-5d281704e500/text:0
@@ -205,7 +181,7 @@ msgid ""
 "n\n"
 "@webhook.json.statusDescriptionTranslated"
 msgstr ""
-"Su queja 311 sigue abierta y ha sido actualizada por el Departamento de "
-"Policía de Houston (HPD) con la siguiente descripción:\n"
+"Plent 311 ou a toujou louvri epi HPD mete l ajou ak deskripsyon sa a:\n"
+"\n"
 "\n"
 "@webhook.json.statusDescriptionTranslated"
