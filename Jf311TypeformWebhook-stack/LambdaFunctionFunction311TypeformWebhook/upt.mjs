@@ -157,7 +157,8 @@ export const handleUptResponse = async (
     ?.label;
   const language3 = toTextitLanguageCode(languageAnswer);
   const srAnswers = filterAnswersByRefRegex(answers, /^sr-\d+-.{2}$/);
-  const srNumbers = srAnswers.map((x) => format311SrNumber(x.text));
+  const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
+  const srNumbers = [...new Set(srNumbersAll)];
   const srNumbersCsv = srNumbers.join(",");
 
   const issuesNotes = getIssuesNotes(answers);
