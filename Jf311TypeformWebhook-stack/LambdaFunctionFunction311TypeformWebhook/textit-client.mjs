@@ -29,13 +29,8 @@ class TextitClient {
       },
       body: JSON.stringify(body),
     });
-    const data = await response.json();
-    const { status, statusText } = response;
-    return {
-      status,
-      statusText,
-      data,
-    };
+
+    return response;
   }
 
   /**
@@ -69,8 +64,14 @@ class TextitClient {
     if (fields) body.fields = fields;
 
     const urlParams = { urn };
-
-    return await this.sendRequest("contacts", "POST", body, urlParams);
+    const response = await this.sendRequest(
+      "contacts",
+      "POST",
+      body,
+      urlParams,
+    );
+    console.log("Textit - addOrUpdateContact: ", response);
+    return response;
   }
 
   /**
@@ -85,11 +86,13 @@ class TextitClient {
   async addContactToGroup(phone, group) {
     const urn = this.phoneToUrn(phone);
 
-    return await this.sendRequest("contact_actions", "POST", {
+    const response = await this.sendRequest("contact_actions", "POST", {
       contacts: [urn],
       action: "add",
       group: group,
     });
+    console.log("Textit - addContactToGroup: ", response);
+    return response;
   }
 }
 export default TextitClient;

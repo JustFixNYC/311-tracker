@@ -1,5 +1,4 @@
 Transform: AWS::Serverless-2016-10-31
-Parameters: {}
 Resources:
   LambdaFunctionFunction311TypeformWebhook:
     Type: AWS::Serverless::Function
@@ -21,10 +20,8 @@ Resources:
       RecursiveLoop: Terminate
       Environment:
         Variables:
+          DB_TABLE: Users311Tracker
           UPT_FORM_ID: UrIJg4oD
-          UPT_TEXTIT_DATE_FIELD: upt_311_start_date
-          UPT_TEXTIT_311_SR_FIELD: upt_311_sr_number
-          UPT_TEXTIT_CHECKLIST_FIELD: upt_checklist_url
           UPT_TEXTIT_GROUP: 13099c82-e3bf-42bc-b385-7ed8c05506de
           TYPEFORM_SECRET_NAME: Jf311TypeformWebhookSecret
           TEXTIT_SECRET_NAME: JFTextitToken

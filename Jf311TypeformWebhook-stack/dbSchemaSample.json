@@ -1,0 +1,37 @@
+{
+  "phone": "+12125551234",
+  "language3": "eng",
+  "org": "upt",
+  "fullName": "john doe",
+  "address": "123 main st",
+  "apartment": "1A",
+  "hpdBuildingId": "857394",
+  "checklistUrl": "https://...",
+  "issuesNotes": [
+    {
+      "section": "bedrooms",
+      "type": "issues",
+      "value": ["mold", "peeling paint"]
+    },
+    {
+      "section": "bedrooms",
+      "type": "notes",
+      "value": ["notes to building captains"]
+    }
+  ],
+  "srNumbers": ["311-12345678", "311-12345678"],
+  "complaints": [
+    {
+      "srNumber": "311-12345678",
+      "hpdComplaintId": "123456",
+      "receivedDate": "2026-02-25T07:31:31",
+      "condition": "ENTIRE BUILDING",
+      "conditionDetail": "NO HEAT",
+      "location": "BUILDING-WIDE",
+      "status": "Open",
+      "statusDate": "2025-01-01",
+      "statusDescription": "lorem ipsum..",
+      "statusDescriptionTranslated": "lorem ipsum.."
+    }
+  ]
+}

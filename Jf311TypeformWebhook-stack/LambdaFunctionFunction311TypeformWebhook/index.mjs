@@ -3,6 +3,8 @@ import {
   GetSecretValueCommand,
 } from "@aws-sdk/client-secrets-manager";
 import { S3Client } from "@aws-sdk/client-s3";
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 import crypto from "crypto";
 import TextitClient from "./textit-client.mjs";
 import { handleUptResponse } from "./upt.mjs";
@@ -10,6 +12,8 @@ import { handleUptResponse } from "./upt.mjs";
 const config = { region: process.env.AWS_REGION_NAME };
 const s3Client = new S3Client(config)
 const smClient = new SecretsManagerClient(config);
+const ddbClient = new DynamoDBClient(config);
+const ddbDocClient = DynamoDBDocumentClient.from(ddbClient);
 
 // Fetch the secret once during the Lambda function's init phase (cold start)
 let secretsData;
@@ -53,7 +57,7 @@ const handleTypeformResponse = async (event, textitClient, s3Client) => {
   //  Handle forms for each camapign
   switch (formId) {
     case process.env.UPT_FORM_ID:
-      await handleUptResponse(payload, textitClient, s3Client);
+      await handleUptResponse(payload, textitClient, s3Client, ddbDocClient);
       break;
 
     default:
@@ -83,6 +87,7 @@ export const handler = async (event, context) => {
   } catch (error) {
     if (error instanceof SyntaxError) {
       // Handle JSON parsing errors
+      console.log(error)
       return {
         statusCode: 400,
         body: JSON.stringify({ error: "Invalid JSON payload" }),

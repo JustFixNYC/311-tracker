@@ -1,11 +1,11 @@
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 
-const makeChecklistHtml = (answers, title) => {
-  const answersBySection = answers
-    .filter((answer) => answer.field.ref.match("-(?:issues)|(?:notes)$"))
+export const getIssuesNotes = (answers) => {
+  return answers
+    .filter((answer) => answer.field.ref.match("-(?:issues)|(?:notes).{2}$"))
     .map((answer) => {
-      const section = answer.field.ref;
-      if (section.match(/-issues$/)) {
+      const section = answer.field.ref.slice(0, -3);
+      if (section.match(/-issues/)) {
         return {
           section,
           type: "issues",
@@ -19,8 +19,9 @@ const makeChecklistHtml = (answers, title) => {
         };
       }
     });
-
-  const checklistSections = answersBySection
+};
+const makeChecklistHtml = (issuesNotes, title, subtitle) => {
+  const checklistSections = issuesNotes
     .map((answer) => {
       if (answer.type === "issues") {
         const listItems = answer.value
@@ -60,6 +61,7 @@ const makeChecklistHtml = (answers, title) => {
     </head>
     <body>
         <h1>${title}</h1>
+        <h2>${subtitle}</h2>
         ${checklistSections}
     </body>
     </html>`;
@@ -67,8 +69,8 @@ const makeChecklistHtml = (answers, title) => {
   return htmlText;
 };
 
-export const uploadChecklist = async (answers, s3Client, title, subdir) => {
-  const checklistHtml = makeChecklistHtml(answers, title);
+export const uploadChecklist = async (issuesNotes, s3Client, title, subtitle, subdir) => {
+  const checklistHtml = makeChecklistHtml(issuesNotes, title, subtitle);
   const randomId = crypto.randomUUID();
   const bucket = process.env.CHECKLIST_BUCKET;
   const key = `${subdir}/${randomId}/checklist.html`;

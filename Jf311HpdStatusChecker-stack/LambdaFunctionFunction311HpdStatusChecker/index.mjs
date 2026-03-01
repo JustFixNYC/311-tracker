@@ -61,7 +61,7 @@ const getComplaint = (complaints, srNumber) => {
   return complaints.find((c) => c.serialNo === srNumber);
 };
 
-const get2CharLanguageCode = (language) => {
+const getDeeplTargetLanguage = (language) => {
   if (language.length === 2) return language;
   if (language === "hat") return "ht"; // Haitian Creole
   if (language === "spa") return "ES-419"; // Spanish (Latin American);
@@ -75,7 +75,7 @@ export const handler = async (event) => {
   try {
     const buildingId = event.queryStringParameters.buildingId;
     const srNumber = event.queryStringParameters.srNumber;
-    const language = get2CharLanguageCode(event.queryStringParameters.language);
+    const language = getDeeplTargetLanguage(event.queryStringParameters.language);
 
     if (!language) {
       return {

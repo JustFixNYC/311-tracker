@@ -1,5 +1,11 @@
-import { getAnswerByRef, getHiddenField, toIsoLanguage } from "./typeform.mjs";
-import { uploadChecklist } from "./checklist.mjs";
+import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import {
+  findAnswerByRefRegex,
+  filterAnswersByRefRegex,
+  toTextitLanguageCode,
+  format311SrNumber,
+} from "./typeform.mjs";
+import { getIssuesNotes, uploadChecklist } from "./checklist.mjs";
 
 const ADDRESS_BUILDING_ID_MAP = {
   "237 West 18 Street, Manhattan": "30714",
@@ -100,41 +106,94 @@ const getHpdBuildingId = (address) => {
   return ADDRESS_BUILDING_ID_MAP[address] || "";
 };
 
-export const handleUptResponse = async (payload, textitClient, s3Client) => {
+const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
+  const params = {
+    TableName: process.env.DB_TABLE,
+    Key: {
+      phone: data.phone, // Primary Key of the item to update
+    },
+    // Defines how to modify attributes
+    UpdateExpression:
+      "set fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
+    ExpressionAttributeValues: {
+      // Placeholder values for the update
+      ":fn": data.name,
+      ":l": data.language3,
+      ":o": "upt",
+      ":addr": data.address,
+      ":apt": data.apartment,
+      ":hpdid": data.hpdBuildingId,
+      ":checkurl": data.checklistUrl,
+      ":iss": data.issuesNotes,
+    },
+    ReturnValues: "UPDATED_NEW", // Returns the new values of the updated attributes
+  };
+
+  try {
+    const resp = await ddbDocClient.send(new UpdateCommand(params));
+    console.log("UpdateItem succeeded:", resp);
+  } catch (err) {
+    console.error("Unable to update item. Error:", err);
+  }
+};
+
+export const handleUptResponse = async (
+  payload,
+  textitClient,
+  s3Client,
+  ddbDocClient,
+) => {
   console.log("Handling UPT response");
 
   const answers = payload.form_response.answers;
   const submittedAt = payload.form_response.submitted_at;
-  const phone = getAnswerByRef(answers, "phone")?.phone_number;
-  const name = getAnswerByRef(answers, "name")?.text;
-  const address = getAnswerByRef(answers, "address")?.choice?.label;
+  const phone = findAnswerByRefRegex(answers, /^phone-.{2}$/)?.phone_number;
+  const name = findAnswerByRefRegex(answers, /^name-.{2}$/)?.text;
+  const address = findAnswerByRefRegex(answers, /^address-.{2}$/)?.choice
+    ?.label;
+  const apartment = findAnswerByRefRegex(answers, /^apartment-.{2}$/)?.text;
   const hpdBuildingId = getHpdBuildingId(address);
-  const langHidden = getHiddenField(payload, "lang");
-  const langQuestion = getAnswerByRef(answers, "language")?.text;
-  const langIso = toIsoLanguage(langQuestion || langHidden);
-  const sr311 = getAnswerByRef(answers, "sr_311")?.text || "";
+  const languageAnswer = findAnswerByRefRegex(answers, /^language$/)?.choice
+    ?.label;
+  const language3 = toTextitLanguageCode(languageAnswer);
+  const srAnswers = filterAnswersByRefRegex(answers, /^sr-\d+-.{2}$/);
+  const srNumbers = srAnswers.map((x) => format311SrNumber(x.text));
+  const srNumbersCsv = srNumbers.join(",");
 
-  const checklistUrl = await uploadChecklist(answers, s3Client, "UPT 311 Checklist", "upt")
+  const issuesNotes = getIssuesNotes(answers);
+  const checklistTitle = "UPT 311 Checklist";
+  const checklistSubtitle = `${address} - Apt ${apartment}`;
+  const checklistUrl = await uploadChecklist(
+    issuesNotes,
+    s3Client,
+    checklistTitle,
+    checklistSubtitle,
+    "upt",
+  );
 
-  const fields = {
-    [process.env.UPT_TEXTIT_DATE_FIELD]: submittedAt,
-    [process.env.UPT_TEXTIT_311_SR_FIELD]: sr311,
-    [process.env.UPT_TEXTIT_CHECKLIST_FIELD]: checklistUrl,
-    hpd_building_id: hpdBuildingId,
+  const dbAttributes = {
+    phone: phone,
+    language3: language3,
+    org: "upt",
+    name: name,
+    address: address,
+    apartment: apartment,
+    hpdBuildingId: hpdBuildingId,
+    checklistUrl: checklistUrl,
+    issuesNotes: issuesNotes,
+    srNumbers: srNumbers,
   };
 
-  const resp1 = await textitClient.addOrUpdateContact(
-    phone,
-    name,
-    langIso,
-    fields,
-  );
-  console.log("Textit - addOrUpdateContact: ", resp1);
+  await addOrUpdateUptTenantDb(ddbDocClient, dbAttributes);
 
-  const resp2 = await textitClient.addContactToGroup(
-    phone,
-    process.env.UPT_TEXTIT_GROUP,
-  );
-  console.log("Textit - addContactToGroup: ", resp2);
+  const textitFields = {
+    upt_311_start_date: submittedAt,
+    checklist_311_url: checklistUrl,
+    hpd_building_id: hpdBuildingId,
+    sr_311_numbers: srNumbersCsv,
+  };
 
+  await textitClient.addOrUpdateContact(phone, name, language3, textitFields);
+
+  await textitClient.addContactToGroup(phone, process.env.UPT_TEXTIT_GROUP);
 };
