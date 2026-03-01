@@ -1,0 +1,523 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: localizely.com\n"
+"Last-Translator: localizely.com\n"
+"Language-Team: localizely.com\n"
+"\n"
+"Language: --\n"
+
+#. description
+msgid "id"
+msgstr "translation"
+
+#. fields.GVu70IkOIsnA.title
+msgid "Language"
+msgstr ""
+
+#. fields.dwTSS5YwVrfb.title
+msgid "About this form (Es)"
+msgstr ""
+
+#. fields.dwTSS5YwVrfb.properties.description
+msgid ""
+"This form will help your building captains keep track of the issues in your "
+"apartment and the 311 complaints you make. \n"
+"\n"
+"If you have already called 311, or call while filling out this form, "
+"remember to write down the 311 \"\"Service Request Number\"\" they give you. "
+"If you call 311 after filling out this form, we'll send you a follow up text "
+"message that you can respond to with your 311 Service Request Number.\n"
+"\n"
+"If you need to change any answers in the form, you can go 'back' at any time "
+"by hitting the 'up' arrow in the bottom right corner of the form on your "
+"computer, or the 'back' arrow on mobile.\n"
+"\n"
+"Your responses will be kept private and will only visible to UPT organizers "
+"and to JustFix.org — the nonprofit organization assisting UPT with this "
+"campaign."
+msgstr ""
+
+#. fields.dwTSS5YwVrfb.properties.button_text
+msgid "Continue"
+msgstr ""
+
+#. fields.GDOjSnlXz5OD.title
+msgid "Your cell phone number (Es)"
+msgstr ""
+
+#. fields.GDOjSnlXz5OD.properties.description
+msgid ""
+"We'll send you a text message in a couple days to follow up on your 311 "
+"complaint"
+msgstr ""
+
+#. fields.fJhxkuN6Yb0D.title
+msgid "Your full name (Es)"
+msgstr ""
+
+#. fields.HTSjwOPoUbQx.title
+msgid "Your building (Es)"
+msgstr ""
+
+#. fields.HTSjwOPoUbQx.properties.description
+msgid ""
+"Start typing your building address or click the dropdown to see all "
+"available addresses"
+msgstr ""
+
+#. fields.vtCp1913Io2f.title
+msgid "Your apartment number (Es)"
+msgstr ""
+
+#. fields.hjxx8mVD2aLG.title
+msgid "Bedrooms issues (Es)"
+msgstr ""
+
+#. fields.hjxx8mVD2aLG.properties.description
+msgid "This includes all bedrooms in your apartment"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.title
+msgid ""
+"Select as many issues as you like. If there are no issues in this room, you "
+"can select \"Next\" at the bottom of the list."
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Hu0JuDxwrV1S.label
+msgid "Mold on walls"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.sfPMY7oWxwzk.label
+msgid "Water damage"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wCzrrgnF5uQy.label
+msgid "Peeling paint"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z9mDYqWRJwPj.label
+msgid "Cracked walls"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.fSrnnHHN55R0.label
+msgid "Loose floor"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YeXmGP1KP8nj.label
+msgid "Baseboards defective"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.xnwuGQYRTUVB.label
+msgid "Window glass broken"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.XPUQ9gGgureg.label
+msgid "Window frame defective"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.UW3xw92VjKS0.label
+msgid "Door is broken or missing"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.llQyQfUOBlJ4.label
+msgid "Door lock is broken or missing"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.BfaGVVfzcGJq.label
+msgid "Radiators/risers not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.SrQaZhoYFTgn.label
+msgid ""
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.5cuQVleK4N9F.label
+msgid "Radiator steam pipe/riser is broken or missing"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YpSetV1fJorm.label
+msgid "Ceiling falling/fell"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.hsr1WboMwXlc.label
+msgid "Ceiling leaking"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.GsvK6fD2z0Fe.label
+msgid "Electricity not working"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.XoAMkgMFpv9C.label
+msgid "Electric wiring exposed"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z3QoNKNs03B2.label
+msgid "Outlets not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.WDJBZbamfpep.label
+msgid "Outlets working but damaged"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.VB2qaUARbOqD.title
+msgid ""
+"Any additional details you want your Building Captain or HPD inspectors to "
+"know?"
+msgstr ""
+
+#. fields.yb4gkoNjUFn9.title
+msgid "Living room issues (Es)"
+msgstr ""
+
+#. fields.QL0QjZADptVV.title
+msgid "Kitchen issues (Es)"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.fr8FTiLoPrgw.label
+msgid "Refrigerator not working"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.M3GEffiYh1vf.label
+msgid "Stove not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NLJhVoKegbOT.label
+msgid "Cracked sink"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.HV9QjqbOZkkf.label
+msgid "Leaky faucet"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.5JYSelLexrc2.label
+msgid "Faucets not installed"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.8IkQJ53mwDcc.label
+msgid "Faucets not working"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3WnMCGSMHnR9.label
+msgid "Inadequate water pressure"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.t6r2kL11jkjR.label
+msgid "Pipes leaking"
+msgstr ""
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NdzhChsxPpMl.label
+msgid "Drain stoppage"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wiIfsQ5awmzd.label
+msgid ""
+"Inadequate ventilation (e.g. dirty vent, releasing substances, defective)"
+msgstr ""
+
+#. fields.ynPRGD1Pf6hK.title
+msgid "Bathroom issues (Es)"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.title
+msgid "General"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.jzspDz46Glxh.label
+msgid "Toilet not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.tmPQuCXsi6SB.label
+msgid "Toilet leaking"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.title
+msgid "Sink"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZinjKCsjaVNG.label
+msgid "Sink: Leaky faucet"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NtJ65OG914ch.label
+msgid "Sink: Faucets not installed"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.urwCN6662O5t.label
+msgid "Sink: Faucets not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZhDZvvplndaG.label
+msgid "Sink: Low water pressure"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.8hyvhzwEyy2D.label
+msgid "Sink: Pipes leaking"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.PMWh1KWtIaC7.label
+msgid "Sink: Drain stoppage"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.title
+msgid "Bathtub"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.rAvjFGkce123.label
+msgid "Cracked tub"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.CVwWtxbFRab8.label
+msgid "Bathtub: Leaky faucet"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.9KtOuvPpX3At.label
+msgid "Bathtub: Faucets not installed"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.uRT9jPfiSAuF.label
+msgid "Bathtub: Faucets not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.DzuGiWS1c2Ff.label
+msgid "Bathtub: Pipes leaking"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.2ugrzoDWb3Or.label
+msgid "Bathtub: Drain stoppage"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.title
+msgid "Shower"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.8KF3qbaSMRtN.label
+msgid "Shower: Wall tiles cracked"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fk7n3ZrSX04n.label
+msgid "Shower: Wall tiles missing"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fJgt7aavqYyU.label
+msgid "Shower: Not working"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Q4wY0pCs3Zla.label
+msgid "Shower: Low water pressure"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.4uifjWYJQVel.label
+msgid "Shower: Leaky shower head"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.2q5fG7NuzeGD.label
+msgid "Shower: Drain stoppage"
+msgstr ""
+
+#. fields.cczKQdPIg3ZV.title
+msgid "Bathroom issues (En)"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.title
+msgid "Home-wide issues (Es)"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.X3k1vH4tNQLz.label
+msgid "Mice"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.B4GdMGiHk7zy.label
+msgid "Rats"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.x0uJuYTNs6Dg.label
+msgid "Cockroaches"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.S945vfqYT2YT.label
+msgid "No gas"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.k1MXkeo8uSLt.label
+msgid "No heat"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.VWmLIyajnjeD.label
+msgid "No hot water"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.yoUTwdJdeLzl.label
+msgid "No cold water"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.dQPoEDHLse8X.label
+msgid "No smoke detector"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.pJ8JpZBQUkOQ.label
+msgid "Smoke detector not working"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.7OWf1CdCvDoG.label
+msgid "Floor sags"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.VSGeqO4jjZiD.label
+msgid "Apartment needs painting"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.4Uy4kwzHb8pg.label
+msgid "Front door not working"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.FqUKwJMQ0wUq.label
+msgid "Door lock not working"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.9hrGLAf2fMxf.label
+msgid "Doorbell not working"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.6zNpb3HfS1hR.label
+msgid "Buzzer not working"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.wvqXkZZamNHS.label
+msgid "Lead-based paint"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.nNXjEMPWUHUp.label
+msgid "Vacate order issued"
+msgstr ""
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.2nUvJ2jZOa83.label
+msgid "Mold"
+msgstr ""
+
+#. fields.cp5zwka4YplW.title
+msgid "Building-wide issues (Es)"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.description
+msgid ""
+"This can include any issues in common areas, such as the lobby, stairwells, "
+"laundry room, basement, and more."
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.wsJMXTrglSFC.label
+msgid "Painting overdue (3 years)"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.lRtuTqTZvqgw.label
+msgid "Peeling/flaking paint"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.TjosVARI9sKP.label
+msgid "Rusty water"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.DmDF1qt2R4EH.label
+msgid "Weak electrical current"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.aIlttU9gylQB.label
+msgid "Bug infestation"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.eLCtarg5IYov.label
+msgid "Rats/mice"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.dak3mFEFFbh2.label
+msgid "Fumes/smoke entering apartment"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.EyalvFa5l2qr.label
+msgid "Broken/no smoke/Co2 detector"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Y0N1obdsEi7i.label
+msgid "Window guards missing"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.bxtw2bxfOSwO.label
+msgid "Washing machine not working"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Wq0eM3atJJfH.label
+msgid "Dryer not working"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.rRdcGgCDemcO.label
+msgid "Inadequate/no super service"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.kNmcf31N8vvn.label
+msgid "No rent receipts given"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.WWVtEPSbehlO.label
+msgid "Rent receipts incomplete"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.nNkgKpmnJEEE.label
+msgid "Broken elevator"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.FtLZ5N8fzwkC.label
+msgid "Cracked floors"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.v1lErr5NWLme.label
+msgid "Inadequate lighting"
+msgstr ""
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3jyo80g73Ou0.label
+msgid "Exit signs not visible"
+msgstr ""
+
+#. fields.JZAXrVMH9kYr.title
+msgid "311 Service Request Number (Es)"
+msgstr ""
+
+#. fields.JZAXrVMH9kYr.properties.description
+msgid ""
+"If you have already submitted 311 complaints, share the Service Request "
+"Number they gave you so we can monitor the status. The complaint number will "
+"be formatted like: \"311-12345678\". \n"
+"\n"
+"If you do not yet have a Service Request Number, you can still hit the "
+"\"Submit\" button below. After you make your complaint to 311, we will "
+"follow up with a text message in a couple days to ask you for the Service "
+"Request Number.\n"
+"\n"
+"You can enter up to 10 Service Request Numbers through this form. If you "
+"have more than 10, you can let us know in the follow up text chain."
+msgstr ""
+
+#. fields.JZAXrVMH9kYr.properties.fields.v27VtcoTXg6v.title
+msgid "Service Request #1"
+msgstr ""
+
+#. thankyou_screens.ZU0eqKH6zETy.title
+msgid "All done - thank you (Es)"
+msgstr ""
+
+#. thankyou_screens.ZU0eqKH6zETy.properties.button_text
+msgid "again"
+msgstr ""
+
+#. thankyou_screens.ZU0eqKH6zETy.properties.description
+msgid ""
+"We'll send you a text message now with a checklist of all the issues you "
+"selected. You can refer to that list when HPD inspectors come to make sure "
+"that they issue violations for all issues.\n"
+"\n"
+"We will send you a text message in a few days to check on the status of your "
+"311 complaint and to learn if HPD issued violations or if you need to call "
+"311 again."
+msgstr ""

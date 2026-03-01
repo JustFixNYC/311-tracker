@@ -1,0 +1,507 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: --\n"
+"Language-Team: localizely.com\n"
+"Last-Translator: localizely.com\n"
+"MIME-Version: 1.0\n"
+"X-Generator: localizely.com\n"
+
+#. description
+msgid "id"
+msgstr "translation"
+
+#. fields.GVu70IkOIsnA.title
+msgid "Language"
+msgstr "Idioma"
+
+#. fields.dwTSS5YwVrfb.title
+msgid "About this form (Es)"
+msgstr "Acerca de este formulario (Es)"
+
+#. fields.dwTSS5YwVrfb.properties.description
+msgid ""
+"This form will help your building captains keep track of the issues in your apartment and the 311 complaints you make. \n"
+"\n"
+"If you have already called 311, or call while filling out this form, remember to write down the 311 \"\"Service Request Number\"\" they give you. If you call 311 after filling out this form, we'll send you a follow up text message that you can respond to with your 311 Service Request Number.\n"
+"\n"
+"If you need to change any answers in the form, you can go 'back' at any time by hitting the 'up' arrow in the bottom right corner of the form on your computer, or the 'back' arrow on mobile.\n"
+"\n"
+"Your responses will be kept private and will only visible to UPT organizers and to JustFix.org — the nonprofit organization assisting UPT with this campaign."
+msgstr ""
+"Este formulario ayudará a los capitanes de su edificio a llevar un registro de los problemas de su piso y de las 311 quejas que presente. \n"
+"\n"
+"Si ya ha llamado al 311, o llama mientras rellena este formulario, recuerde anotar el \"Número de solicitud de servicio\" del 311 que le den. Si llama al 311 después de rellenar este formulario, le enviaremos un mensaje de texto de seguimiento al que podrá responder con su número de solicitud de servicio 311.\n"
+"\n"
+"Si necesita cambiar alguna respuesta del formulario, puede volver atrás en cualquier momento pulsando la flecha \"arriba\" en la esquina inferior derecha del formulario en su ordenador, o la flecha \"atrás\" en el móvil.\n"
+"\n"
+"Tus respuestas se mantendrán en privado y sólo serán visibles para los organizadores de la UPT y para JustFix.org, la organización sin ánimo de lucro que ayuda a la UPT con esta campaña."
+
+#. fields.dwTSS5YwVrfb.properties.button_text
+msgid "Continue"
+msgstr "Continúe en"
+
+#. fields.GDOjSnlXz5OD.title
+msgid "Your cell phone number (Es)"
+msgstr "Su número de teléfono móvil (Es)"
+
+#. fields.GDOjSnlXz5OD.properties.description
+msgid "We'll send you a text message in a couple days to follow up on your 311 complaint"
+msgstr "Te enviaremos un mensaje de texto en un par de días para hacer un seguimiento de tu queja 311"
+
+#. fields.fJhxkuN6Yb0D.title
+msgid "Your full name (Es)"
+msgstr "Su nombre completo (Es)"
+
+#. fields.HTSjwOPoUbQx.title
+msgid "Your building (Es)"
+msgstr "Su edificio (Es)"
+
+#. fields.HTSjwOPoUbQx.properties.description
+msgid "Start typing your building address or click the dropdown to see all available addresses"
+msgstr "Empiece a escribir la dirección de su edificio o haga clic en el desplegable para ver todas las direcciones disponibles"
+
+#. fields.vtCp1913Io2f.title
+msgid "Your apartment number (Es)"
+msgstr "Su número de apartamento (Es)"
+
+#. fields.hjxx8mVD2aLG.title
+msgid "Bedrooms issues (Es)"
+msgstr "Problemas con los dormitorios (Es)"
+
+#. fields.hjxx8mVD2aLG.properties.description
+msgid "This includes all bedrooms in your apartment"
+msgstr "Esto incluye todas las habitaciones de su apartamento"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.title
+msgid "Select as many issues as you like. If there are no issues in this room, you can select \"Next\" at the bottom of the list."
+msgstr "Seleccione tantos asuntos como desee. Si no hay asuntos en esta sala, puede seleccionar \"Siguiente\" al final de la lista."
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Hu0JuDxwrV1S.label
+msgid "Mold on walls"
+msgstr "Moho en las paredes"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.sfPMY7oWxwzk.label
+msgid "Water damage"
+msgstr "Daños por agua"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wCzrrgnF5uQy.label
+msgid "Peeling paint"
+msgstr "Pintura descascarillada"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z9mDYqWRJwPj.label
+msgid "Cracked walls"
+msgstr "Paredes agrietadas"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.fSrnnHHN55R0.label
+msgid "Loose floor"
+msgstr "Suelo suelto"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YeXmGP1KP8nj.label
+msgid "Baseboards defective"
+msgstr "Zócalos defectuosos"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.xnwuGQYRTUVB.label
+msgid "Window glass broken"
+msgstr "Cristal de ventana roto"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.XPUQ9gGgureg.label
+msgid "Window frame defective"
+msgstr "Marco de ventana defectuoso"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.UW3xw92VjKS0.label
+msgid "Door is broken or missing"
+msgstr "La puerta está rota o falta"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.llQyQfUOBlJ4.label
+msgid "Door lock is broken or missing"
+msgstr "La cerradura de la puerta está rota o falta"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.BfaGVVfzcGJq.label
+msgid "Radiators/risers not working"
+msgstr "Radiadores/rejillas no funcionan"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.SrQaZhoYFTgn.label
+msgid "Radiator working but has issues (e.g. makes loud noises, excessive steam)"
+msgstr "El radiador funciona, pero tiene problemas (por ejemplo, hace mucho ruido o emite demasiado vapor)."
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.5cuQVleK4N9F.label
+msgid "Radiator steam pipe/riser is broken or missing"
+msgstr "Tubo de vapor del radiador roto o ausente"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YpSetV1fJorm.label
+msgid "Ceiling falling/fell"
+msgstr "Caída del techo"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.hsr1WboMwXlc.label
+msgid "Ceiling leaking"
+msgstr "Fugas en el techo"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.GsvK6fD2z0Fe.label
+msgid "Electricity not working"
+msgstr "La electricidad no funciona"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.XoAMkgMFpv9C.label
+msgid "Electric wiring exposed"
+msgstr "Cableado eléctrico expuesto"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z3QoNKNs03B2.label
+msgid "Outlets not working"
+msgstr "Los enchufes no funcionan"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.WDJBZbamfpep.label
+msgid "Outlets working but damaged"
+msgstr "Los enchufes funcionan pero están dañados"
+
+#. fields.cp5zwka4YplW.properties.fields.VB2qaUARbOqD.title
+msgid "Any additional details you want your Building Captain or HPD inspectors to know?"
+msgstr "¿Algún detalle adicional que quiera que sepan su Capitán de Edificios o los inspectores de la HPD?"
+
+#. fields.yb4gkoNjUFn9.title
+msgid "Living room issues (Es)"
+msgstr "Problemas en la sala de estar (Es)"
+
+#. fields.QL0QjZADptVV.title
+msgid "Kitchen issues (Es)"
+msgstr "Problemas de cocina (Es)"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.fr8FTiLoPrgw.label
+msgid "Refrigerator not working"
+msgstr "El frigorífico no funciona"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.M3GEffiYh1vf.label
+msgid "Stove not working"
+msgstr "La estufa no funciona"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NLJhVoKegbOT.label
+msgid "Cracked sink"
+msgstr "Fregadero agrietado"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.HV9QjqbOZkkf.label
+msgid "Leaky faucet"
+msgstr "Grifo con fugas"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.5JYSelLexrc2.label
+msgid "Faucets not installed"
+msgstr "Grifos no instalados"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.8IkQJ53mwDcc.label
+msgid "Faucets not working"
+msgstr "Los grifos no funcionan"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3WnMCGSMHnR9.label
+msgid "Inadequate water pressure"
+msgstr "Presión de agua inadecuada"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.t6r2kL11jkjR.label
+msgid "Pipes leaking"
+msgstr "Fugas en las tuberías"
+
+#. fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NdzhChsxPpMl.label
+msgid "Drain stoppage"
+msgstr "Obstrucción del desagüe"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wiIfsQ5awmzd.label
+msgid "Inadequate ventilation (e.g. dirty vent, releasing substances, defective)"
+msgstr "Ventilación inadecuada (por ejemplo, ventilación sucia, liberación de sustancias, defectuosa)"
+
+#. fields.ynPRGD1Pf6hK.title
+msgid "Bathroom issues (Es)"
+msgstr "Problemas en el baño (Es)"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.title
+msgid "General"
+msgstr "General"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.jzspDz46Glxh.label
+msgid "Toilet not working"
+msgstr "El inodoro no funciona"
+
+#. fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.tmPQuCXsi6SB.label
+msgid "Toilet leaking"
+msgstr "Fugas en el inodoro"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.title
+msgid "Sink"
+msgstr "Fregadero"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZinjKCsjaVNG.label
+msgid "Sink: Leaky faucet"
+msgstr "Fregadero: Grifo que gotea"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NtJ65OG914ch.label
+msgid "Sink: Faucets not installed"
+msgstr "Fregadero: Grifos no instalados"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.urwCN6662O5t.label
+msgid "Sink: Faucets not working"
+msgstr "Fregadero: Los grifos no funcionan"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZhDZvvplndaG.label
+msgid "Sink: Low water pressure"
+msgstr "Fregadero: Baja presión de agua"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.8hyvhzwEyy2D.label
+msgid "Sink: Pipes leaking"
+msgstr "Fregadero: Fugas en las tuberías"
+
+#. fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.PMWh1KWtIaC7.label
+msgid "Sink: Drain stoppage"
+msgstr "Fregadero: Taponamiento del desagüe"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.title
+msgid "Bathtub"
+msgstr "Bañera"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.rAvjFGkce123.label
+msgid "Cracked tub"
+msgstr "Bañera agrietada"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.CVwWtxbFRab8.label
+msgid "Bathtub: Leaky faucet"
+msgstr "Bañera: Grifo que gotea"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.9KtOuvPpX3At.label
+msgid "Bathtub: Faucets not installed"
+msgstr "Bañera: Grifos no instalados"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.uRT9jPfiSAuF.label
+msgid "Bathtub: Faucets not working"
+msgstr "Bañera: Grifos que no funcionan"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.DzuGiWS1c2Ff.label
+msgid "Bathtub: Pipes leaking"
+msgstr "Bañera: Fugas en las tuberías"
+
+#. fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.2ugrzoDWb3Or.label
+msgid "Bathtub: Drain stoppage"
+msgstr "Bañera: Atasco del desagüe"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.title
+msgid "Shower"
+msgstr "Ducha"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.8KF3qbaSMRtN.label
+msgid "Shower: Wall tiles cracked"
+msgstr "Ducha: Azulejos agrietados"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fk7n3ZrSX04n.label
+msgid "Shower: Wall tiles missing"
+msgstr "Ducha: Faltan azulejos"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fJgt7aavqYyU.label
+msgid "Shower: Not working"
+msgstr "Ducha: No funciona"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Q4wY0pCs3Zla.label
+msgid "Shower: Low water pressure"
+msgstr "Ducha: Baja presión de agua"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.4uifjWYJQVel.label
+msgid "Shower: Leaky shower head"
+msgstr "Ducha: Ducha con fugas"
+
+#. fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.2q5fG7NuzeGD.label
+msgid "Shower: Drain stoppage"
+msgstr "Ducha: Taponamiento del desagüe"
+
+#. fields.cczKQdPIg3ZV.title
+msgid "Bathroom issues (En)"
+msgstr "Problemas con el baño (En)"
+
+#. fields.lsCGpdjWs8hC.title
+msgid "Home-wide issues (Es)"
+msgstr "Cuestiones relacionadas con el hogar (Es)"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.X3k1vH4tNQLz.label
+msgid "Mice"
+msgstr "Ratones"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.B4GdMGiHk7zy.label
+msgid "Rats"
+msgstr "Ratas"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.x0uJuYTNs6Dg.label
+msgid "Cockroaches"
+msgstr "Cucarachas"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.S945vfqYT2YT.label
+msgid "No gas"
+msgstr "Sin gas"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.k1MXkeo8uSLt.label
+msgid "No heat"
+msgstr "Sin calor"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.VWmLIyajnjeD.label
+msgid "No hot water"
+msgstr "No hay agua caliente"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.yoUTwdJdeLzl.label
+msgid "No cold water"
+msgstr "No hay agua fría"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.dQPoEDHLse8X.label
+msgid "No smoke detector"
+msgstr "No hay detector de humo"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.pJ8JpZBQUkOQ.label
+msgid "Smoke detector not working"
+msgstr "El detector de humos no funciona"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.7OWf1CdCvDoG.label
+msgid "Floor sags"
+msgstr "Hundimientos del suelo"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.VSGeqO4jjZiD.label
+msgid "Apartment needs painting"
+msgstr "El apartamento necesita pintura"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.4Uy4kwzHb8pg.label
+msgid "Front door not working"
+msgstr "La puerta delantera no funciona"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.FqUKwJMQ0wUq.label
+msgid "Door lock not working"
+msgstr "La cerradura de la puerta no funciona"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.9hrGLAf2fMxf.label
+msgid "Doorbell not working"
+msgstr "El timbre no funciona"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.6zNpb3HfS1hR.label
+msgid "Buzzer not working"
+msgstr "El zumbador no funciona"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.wvqXkZZamNHS.label
+msgid "Lead-based paint"
+msgstr "Pintura con plomo"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.nNXjEMPWUHUp.label
+msgid "Vacate order issued"
+msgstr "Orden de anulación dictada"
+
+#. fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.2nUvJ2jZOa83.label
+msgid "Mold"
+msgstr "Moho"
+
+#. fields.cp5zwka4YplW.title
+msgid "Building-wide issues (Es)"
+msgstr "Problemas en todo el edificio (Es)"
+
+#. fields.cp5zwka4YplW.properties.description
+msgid "This can include any issues in common areas, such as the lobby, stairwells, laundry room, basement, and more."
+msgstr "Esto puede incluir cualquier problema en las zonas comunes, como el vestíbulo, las escaleras, la lavandería, el sótano, etc."
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.wsJMXTrglSFC.label
+msgid "Painting overdue (3 years)"
+msgstr "Pintura atrasada (3 años)"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.lRtuTqTZvqgw.label
+msgid "Peeling/flaking paint"
+msgstr "Pintura descascarillada"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.TjosVARI9sKP.label
+msgid "Rusty water"
+msgstr "Agua oxidada"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.DmDF1qt2R4EH.label
+msgid "Weak electrical current"
+msgstr "Corriente eléctrica débil"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.aIlttU9gylQB.label
+msgid "Bug infestation"
+msgstr "Infestación de insectos"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.eLCtarg5IYov.label
+msgid "Rats/mice"
+msgstr "Ratas/ratones"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.dak3mFEFFbh2.label
+msgid "Fumes/smoke entering apartment"
+msgstr "Humos que entran en el apartamento"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.EyalvFa5l2qr.label
+msgid "Broken/no smoke/Co2 detector"
+msgstr "Detector de humo/Co2 roto/ausente"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Y0N1obdsEi7i.label
+msgid "Window guards missing"
+msgstr "Faltan protecciones en las ventanas"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.bxtw2bxfOSwO.label
+msgid "Washing machine not working"
+msgstr "La lavadora no funciona"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Wq0eM3atJJfH.label
+msgid "Dryer not working"
+msgstr "La secadora no funciona"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.rRdcGgCDemcO.label
+msgid "Inadequate/no super service"
+msgstr "Inadecuado/sin súper servicio"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.kNmcf31N8vvn.label
+msgid "No rent receipts given"
+msgstr "No hay recibos de alquiler"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.WWVtEPSbehlO.label
+msgid "Rent receipts incomplete"
+msgstr "Recibos de alquiler incompletos"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.nNkgKpmnJEEE.label
+msgid "Broken elevator"
+msgstr "Ascensor roto"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.FtLZ5N8fzwkC.label
+msgid "Cracked floors"
+msgstr "Suelos agrietados"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.v1lErr5NWLme.label
+msgid "Inadequate lighting"
+msgstr "Iluminación inadecuada"
+
+#. fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3jyo80g73Ou0.label
+msgid "Exit signs not visible"
+msgstr "Señales de salida no visibles"
+
+#. fields.JZAXrVMH9kYr.title
+msgid "311 Service Request Number (Es)"
+msgstr "Número de solicitud de servicio 311 (Es)"
+
+#. fields.JZAXrVMH9kYr.properties.description
+msgid ""
+"If you have already submitted 311 complaints, share the Service Request Number they gave you so we can monitor the status. The complaint number will be formatted like: \"311-12345678\". \n"
+"\n"
+"If you do not yet have a Service Request Number, you can still hit the \"Submit\" button below. After you make your complaint to 311, we will follow up with a text message in a couple days to ask you for the Service Request Number.\n"
+"\n"
+"You can enter up to 10 Service Request Numbers through this form. If you have more than 10, you can let us know in the follow up text chain."
+msgstr ""
+"Si ya ha presentado 311 reclamaciones, comparta el número de solicitud de servicio que le dieron para que podamos supervisar el estado. El número de reclamación tendrá el siguiente formato \"311-12345678\". \n"
+"\n"
+"Si aún no tiene un número de solicitud de servicio, puede pulsar el botón \"Enviar\". Después de presentar su queja al 311, le enviaremos un mensaje de texto en un par de días para pedirle el número de solicitud de servicio.\n"
+"\n"
+"Puede introducir hasta 10 números de solicitud de servicio a través de este formulario. Si tiene más de 10, puede comunicárnoslo en la cadena de mensajes de texto de seguimiento."
+
+#. fields.JZAXrVMH9kYr.properties.fields.v27VtcoTXg6v.title
+msgid "Service Request #1"
+msgstr "Solicitud de servicio nº 1"
+
+#. thankyou_screens.ZU0eqKH6zETy.title
+msgid "All done - thank you (Es)"
+msgstr "Todo hecho - gracias (Es)"
+
+#. thankyou_screens.ZU0eqKH6zETy.properties.button_text
+msgid "again"
+msgstr "de nuevo"
+
+#. thankyou_screens.ZU0eqKH6zETy.properties.description
+msgid ""
+"We'll send you a text message now with a checklist of all the issues you selected. You can refer to that list when HPD inspectors come to make sure that they issue violations for all issues.\n"
+"\n"
+"We will send you a text message in a few days to check on the status of your 311 complaint and to learn if HPD issued violations or if you need to call 311 again."
+msgstr ""
+"Le enviaremos un mensaje de texto ahora con una lista de verificación de todos los problemas que ha seleccionado. Usted puede referirse a esa lista cuando los inspectores HPD vienen a asegurarse de que emiten violaciónes para todos los temas.\n"
+"\n"
+"Le enviaremos un mensaje de texto en unos días para comprobar el estado de su queja 311 y para saber si HPD emitió infracciones o si necesita llamar al 311 de nuevo."

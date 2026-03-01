@@ -1,0 +1,251 @@
+id,translation,description
+Language,,fields.GVu70IkOIsnA.title
+About this form (Es),,fields.dwTSS5YwVrfb.title
+"This form will help your building captains keep track of the issues in your apartment and the 311 complaints you make. 
+
+If you have already called 311, or call while filling out this form, remember to write down the 311 """"Service Request Number"""" they give you. If you call 311 after filling out this form, we'll send you a follow up text message that you can respond to with your 311 Service Request Number.
+
+If you need to change any answers in the form, you can go 'back' at any time by hitting the 'up' arrow in the bottom right corner of the form on your computer, or the 'back' arrow on mobile.
+
+Your responses will be kept private and will only visible to UPT organizers and to JustFix.org — the nonprofit organization assisting UPT with this campaign.",,fields.dwTSS5YwVrfb.properties.description
+Continue,,fields.dwTSS5YwVrfb.properties.button_text
+Your cell phone number (Es),,fields.GDOjSnlXz5OD.title
+We'll send you a text message in a couple days to follow up on your 311 complaint,,fields.GDOjSnlXz5OD.properties.description
+Your full name (Es),,fields.fJhxkuN6Yb0D.title
+Your building (Es),,fields.HTSjwOPoUbQx.title
+Start typing your building address or click the dropdown to see all available addresses,,fields.HTSjwOPoUbQx.properties.description
+Your apartment number (Es),,fields.vtCp1913Io2f.title
+Bedrooms issues (Es),,fields.hjxx8mVD2aLG.title
+This includes all bedrooms in your apartment,,fields.hjxx8mVD2aLG.properties.description
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.title
+Mold on walls,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.UduKF3LLJcrk.label
+Water damage,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.BxzQWSoia2ss.label
+Peeling paint,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.HVd2RWglKvD4.label
+Cracked walls,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.EqLjoSfshKpr.label
+Loose floor,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.DTFtanZm7GMD.label
+Baseboards defective,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.UACfc9yjVFGs.label
+Window glass broken,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.jGSaJ1UG6quk.label
+Window frame defective,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.i43bOcz0QePw.label
+Door is broken or missing,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.QVfCN60HwKdU.label
+Door lock is broken or missing,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.vOH5L9fRC0bn.label
+Radiators/risers not working,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.1VVBzZFoGPI3.label
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)",,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.drtftS1HUVaw.label
+Radiator steam pipe/riser is broken or missing,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.00pA2AM8p8U3.label
+Ceiling falling/fell,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.leUaiqcyV84J.label
+Ceiling leaking,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.9FQ2MHNAuxat.label
+Electricity not working,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.Z7tkiSpy2Aya.label
+Electric wiring exposed,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.NVPYQJlpFYGZ.label
+Outlets not working,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.buqL8nFkADER.label
+Outlets working but damaged,,fields.hjxx8mVD2aLG.properties.fields.Nc0Kj8zuPbHM.properties.choices.o6tgDbkhgkIo.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.hjxx8mVD2aLG.properties.fields.FshxL9pZFaqW.title
+Living room issues (Es),,fields.yb4gkoNjUFn9.title
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.title
+Mold on walls,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.M7OYUgpwfhVS.label
+Water damage,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.sEXRTPFXuwO7.label
+Peeling paint,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.F26jYE5lmlM2.label
+Cracked walls,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.ITchBZ9Msgde.label
+Loose floor,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.qLrQwo4oAWdD.label
+Baseboards defective,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.CndYaBvSjSm1.label
+Window glass broken,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.tQL1vu4hjHZW.label
+Window frame defective,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.8TwSTUVaFNry.label
+Door is broken or missing,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.Em8aAKYtkTpD.label
+Door lock is broken or missing,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.Ruvq3pD1in3E.label
+Radiators/risers not working,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.rzm17FIfQtZS.label
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)",,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.bdkA3EBVF58x.label
+Radiator steam pipe/riser is broken or missing,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.RnOBfC0k9JVn.label
+Ceiling falling/fell,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.XwwWpG05VIQ5.label
+Ceiling leaking,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.MfOOfyOtGt2a.label
+Electricity not working,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.UjlMuuu5LlN3.label
+Electric wiring exposed,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.CD1rJQLwJPwb.label
+Outlets not working,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.4Bm3mNsK2Uqp.label
+Outlets working but damaged,,fields.yb4gkoNjUFn9.properties.fields.JW3Cmv5HN3z4.properties.choices.2RNFUBT2qg0i.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.yb4gkoNjUFn9.properties.fields.WWHPX5UyRMrm.title
+Kitchen issues (Es),,fields.QL0QjZADptVV.title
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.title
+Mold on walls,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.b97g01mvs4uA.label
+Water damage,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.g3PoZzEjQP0L.label
+Peeling paint,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.K8AkQs4zIHkd.label
+Cracked walls,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.meYTbaibKgf6.label
+Loose floor,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.CU7L0OmT1FST.label
+Baseboards defective,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.VpToKXNLyLxF.label
+Window glass broken,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.EvfVv4uRju01.label
+Window frame defective,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.e0gcDUNAmaN6.label
+Door is broken or missing,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.rcgt6ifRMhQ6.label
+Door lock is broken or missing,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.CoW1zkQtPY60.label
+Radiators/risers not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.dZoZ0DE8xTfe.label
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)",,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.68Am5ebf7KRy.label
+Radiator steam pipe/riser is broken or missing,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.8IMlm8tUCbCh.label
+Ceiling falling/fell,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.HSqfKSty4AHm.label
+Ceiling leaking,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.FPO8q8gPT4PF.label
+Electricity not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NthA03o8f8TE.label
+Electric wiring exposed,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.lCrxIsnvmnRU.label
+Outlets not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.G2Q3KLOHGsh2.label
+Outlets working but damaged,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.jr4QVTbJm5Ja.label
+Refrigerator not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.fr8FTiLoPrgw.label
+Stove not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.M3GEffiYh1vf.label
+Cracked sink,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NsVZlYSeFmCu.label
+Leaky faucet,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.HV9QjqbOZkkf.label
+Faucets not installed,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.5JYSelLexrc2.label
+Faucets not working,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.8IkQJ53mwDcc.label
+Inadequate water pressure,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NUGVOp9foz5q.label
+Pipes leaking,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.t6r2kL11jkjR.label
+Drain stoppage,,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.NdzhChsxPpMl.label
+"Inadequate ventilation (e.g. dirty vent, releasing substances, defective)",,fields.QL0QjZADptVV.properties.fields.n1NcocY6GMNU.properties.choices.yAhHb8Oyv2mD.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.QL0QjZADptVV.properties.fields.zINaSm8EnjNC.title
+Bathroom issues (Es),,fields.ynPRGD1Pf6hK.title
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.ynPRGD1Pf6hK.properties.description
+General,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.title
+Mold on walls,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.L9T7qvu5Yskx.label
+Water damage,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.Ekom63EvekHb.label
+Peeling paint,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.L5DCYYPmmZD0.label
+Cracked walls,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.V0CITtA3FZBj.label
+Loose floor,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.engDxfDdbC7Z.label
+Baseboards defective,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.nuMsDdxIsgn2.label
+Window glass broken,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.IkBWcUHi0wtB.label
+Window frame defective,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.cp7v0AUDAFAg.label
+Door is broken or missing,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.mUCNfS1g1UKB.label
+Door lock is broken or missing,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.pGIx90BAkjnH.label
+Radiators/risers not working,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.vr4G6E9cqun4.label
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)",,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.NZE6dVfaEda1.label
+Radiator steam pipe/riser is broken or missing,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.NM0Va6N8AzoM.label
+Ceiling falling/fell,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.lyHMOBIde4EN.label
+Ceiling leaking,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.g6M0GYGZ0DlM.label
+Electricity not working,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.XHZi0E2DCAv3.label
+Electric wiring exposed,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.oaWTNpLtejvO.label
+Outlets not working,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.QbJT8uaULjQ8.label
+Outlets working but damaged,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.j3rOgPX70MnF.label
+Toilet not working,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.p54D09VLerwS.label
+Toilet leaking,,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.0BTDJnXebxSC.label
+"Inadequate ventilation (e.g. dirty vent, releasing substances, defective)",,fields.ynPRGD1Pf6hK.properties.fields.3kE4X0p59ukj.properties.choices.Vu9F1Sz0bNPR.label
+Sink,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.title
+Cracked sink,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.sYeHdV2EccrP.label
+Sink: Leaky faucet,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.0C4QoftqHLJA.label
+Sink: Faucets not installed,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.o4srqSXVVNC9.label
+Sink: Faucets not working,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.KpSKeieo682k.label
+Sink: Low water pressure,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.Np94iF2LeQZJ.label
+Sink: Pipes leaking,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.iZYnlcHb6Is5.label
+Sink: Drain stoppage,,fields.ynPRGD1Pf6hK.properties.fields.85LFyE4lXNDX.properties.choices.D0WX7tYGdqSB.label
+Bathtub,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.title
+Cracked tub,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.mEFV8IGMnorC.label
+Bathtub: Leaky faucet,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.pMcWmHMVah8V.label
+Bathtub: Faucets not installed,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.4d714W3HUmVH.label
+Bathtub: Faucets not working,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.ayjgmps0H3oQ.label
+Bathtub: Pipes leaking,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.7sqknzwAROzO.label
+Bathtub: Drain stoppage,,fields.ynPRGD1Pf6hK.properties.fields.vzQziuMyiH7d.properties.choices.kvzBVtQBnDp5.label
+Shower,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.title
+Mold on walls,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.7PUDbJdVTDIN.label
+Shower: Wall tiles cracked,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.YAn8lydxacb4.label
+Shower: Wall tiles missing,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.mWAjLkuKprvt.label
+Shower: Not working,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.YuEEyzOCQL9p.label
+Shower: Low water pressure,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.HSYmOdLgp3me.label
+Shower: Leaky shower head,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.LT92Aelm6xiv.label
+Shower: Drain stoppage,,fields.ynPRGD1Pf6hK.properties.fields.s8Erfimo6Aeg.properties.choices.17FzLAVrtMYZ.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.ynPRGD1Pf6hK.properties.fields.aY5cQO8cn07Y.title
+Bathroom issues (En),,fields.cczKQdPIg3ZV.title
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.cczKQdPIg3ZV.properties.description
+General,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.title
+Mold on walls,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.egUp7njXDrIZ.label
+Water damage,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.sfPMY7oWxwzk.label
+Peeling paint,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wCzrrgnF5uQy.label
+Cracked walls,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z9mDYqWRJwPj.label
+Loose floor,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.fSrnnHHN55R0.label
+Baseboards defective,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YeXmGP1KP8nj.label
+Window glass broken,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.xnwuGQYRTUVB.label
+Window frame defective,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.XPUQ9gGgureg.label
+Door is broken or missing,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.UW3xw92VjKS0.label
+Door lock is broken or missing,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.llQyQfUOBlJ4.label
+Radiators/risers not working,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.BfaGVVfzcGJq.label
+"Radiator working but has issues (e.g. makes loud noises, excessive steam)",,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.SrQaZhoYFTgn.label
+Radiator steam pipe/riser is broken or missing,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.5cuQVleK4N9F.label
+Ceiling falling/fell,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.YpSetV1fJorm.label
+Ceiling leaking,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.hsr1WboMwXlc.label
+Electricity not working,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.GsvK6fD2z0Fe.label
+Electric wiring exposed,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.P8L0o3CpDg9Y.label
+Outlets not working,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.z3QoNKNs03B2.label
+Outlets working but damaged,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.WDJBZbamfpep.label
+Toilet not working,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.jzspDz46Glxh.label
+Toilet leaking,,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.tmPQuCXsi6SB.label
+"Inadequate ventilation (e.g. dirty vent, releasing substances, defective)",,fields.cczKQdPIg3ZV.properties.fields.IDO72RdjA2cz.properties.choices.wiIfsQ5awmzd.label
+Sink,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.title
+Cracked sink,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NLJhVoKegbOT.label
+Sink: Leaky faucet,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZinjKCsjaVNG.label
+Sink: Faucets not installed,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.NtJ65OG914ch.label
+Sink: Faucets not working,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.urwCN6662O5t.label
+Sink: Low water pressure,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.ZhDZvvplndaG.label
+Sink: Pipes leaking,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.8hyvhzwEyy2D.label
+Sink: Drain stoppage,,fields.cczKQdPIg3ZV.properties.fields.zqsZljDO4EGw.properties.choices.PMWh1KWtIaC7.label
+Bathtub,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.title
+Cracked tub,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.rAvjFGkce123.label
+Bathtub: Leaky faucet,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.CVwWtxbFRab8.label
+Bathtub: Faucets not installed,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.9KtOuvPpX3At.label
+Bathtub: Faucets not working,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.uRT9jPfiSAuF.label
+Bathtub: Pipes leaking,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.DzuGiWS1c2Ff.label
+Bathtub: Drain stoppage,,fields.cczKQdPIg3ZV.properties.fields.JBLfBF6tFOMU.properties.choices.2ugrzoDWb3Or.label
+Shower,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.title
+Mold on walls,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Hu0JuDxwrV1S.label
+Shower: Wall tiles cracked,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.8KF3qbaSMRtN.label
+Shower: Wall tiles missing,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fk7n3ZrSX04n.label
+Shower: Not working,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.fJgt7aavqYyU.label
+Shower: Low water pressure,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.Q4wY0pCs3Zla.label
+Shower: Leaky shower head,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.4uifjWYJQVel.label
+Shower: Drain stoppage,,fields.cczKQdPIg3ZV.properties.fields.lpi80waOElmP.properties.choices.2q5fG7NuzeGD.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.cczKQdPIg3ZV.properties.fields.HomghDyTiekB.title
+Home-wide issues (Es),,fields.lsCGpdjWs8hC.title
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.title
+Mice,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.X3k1vH4tNQLz.label
+Rats,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.B4GdMGiHk7zy.label
+Cockroaches,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.x0uJuYTNs6Dg.label
+No gas,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.S945vfqYT2YT.label
+No heat,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.oV1ylV8HoQKS.label
+No hot water,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.JIbouTcuZnHz.label
+No cold water,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.yoUTwdJdeLzl.label
+No smoke detector,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.dQPoEDHLse8X.label
+Smoke detector not working,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.pJ8JpZBQUkOQ.label
+Floor sags,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.7OWf1CdCvDoG.label
+Apartment needs painting,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.VSGeqO4jjZiD.label
+Front door not working,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.4Uy4kwzHb8pg.label
+Door lock not working,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.FqUKwJMQ0wUq.label
+Doorbell not working,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.9hrGLAf2fMxf.label
+Buzzer not working,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.6zNpb3HfS1hR.label
+Lead-based paint,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.wvqXkZZamNHS.label
+Vacate order issued,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.nNXjEMPWUHUp.label
+Mold,,fields.lsCGpdjWs8hC.properties.fields.dxhTg2RIG885.properties.choices.2nUvJ2jZOa83.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.lsCGpdjWs8hC.properties.fields.D78rrmTPQjkK.title
+Building-wide issues (Es),,fields.cp5zwka4YplW.title
+"This can include any issues in common areas, such as the lobby, stairwells, laundry room, basement, and more.",,fields.cp5zwka4YplW.properties.description
+"Select as many issues as you like. If there are no issues in this room, you can select ""Next"" at the bottom of the list.",,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.title
+Painting overdue (3 years),,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.wsJMXTrglSFC.label
+Peeling/flaking paint,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.lRtuTqTZvqgw.label
+No heat,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.k1MXkeo8uSLt.label
+No hot water,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.VWmLIyajnjeD.label
+Inadequate water pressure,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3WnMCGSMHnR9.label
+Rusty water,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.TjosVARI9sKP.label
+Electric wiring exposed,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.XoAMkgMFpv9C.label
+Weak electrical current,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.DmDF1qt2R4EH.label
+Bug infestation,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.aIlttU9gylQB.label
+Rats/mice,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.eLCtarg5IYov.label
+Fumes/smoke entering apartment,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.dak3mFEFFbh2.label
+Broken/no smoke/Co2 detector,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.EyalvFa5l2qr.label
+Window guards missing,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Y0N1obdsEi7i.label
+Washing machine not working,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.bxtw2bxfOSwO.label
+Dryer not working,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.Wq0eM3atJJfH.label
+Inadequate/no super service,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.rRdcGgCDemcO.label
+No rent receipts given,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.kNmcf31N8vvn.label
+Rent receipts incomplete,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.WWVtEPSbehlO.label
+Broken elevator,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.nNkgKpmnJEEE.label
+Cracked floors,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.FtLZ5N8fzwkC.label
+Inadequate lighting,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.v1lErr5NWLme.label
+Exit signs not visible,,fields.cp5zwka4YplW.properties.fields.Cpkc4zYPYPMM.properties.choices.3jyo80g73Ou0.label
+Any additional details you want your Building Captain or HPD inspectors to know?,,fields.cp5zwka4YplW.properties.fields.VB2qaUARbOqD.title
+311 Service Request Number (Es),,fields.JZAXrVMH9kYr.title
+"If you have already submitted 311 complaints, share the Service Request Number they gave you so we can monitor the status. The complaint number will be formatted like: ""311-12345678"". 
+
+If you do not yet have a Service Request Number, you can still hit the ""Submit"" button below. After you make your complaint to 311, we will follow up with a text message in a couple days to ask you for the Service Request Number.
+
+You can enter up to 10 Service Request Numbers through this form. If you have more than 10, you can let us know in the follow up text chain.",,fields.JZAXrVMH9kYr.properties.description
+Service Request #1,,fields.JZAXrVMH9kYr.properties.fields.v27VtcoTXg6v.title
+All done - thank you (Es),,thankyou_screens.ZU0eqKH6zETy.title
+again,,thankyou_screens.ZU0eqKH6zETy.properties.button_text
+"We'll send you a text message now with a checklist of all the issues you selected. You can refer to that list when HPD inspectors come to make sure that they issue violations for all issues.
+
+We will send you a text message in a few days to check on the status of your 311 complaint and to learn if HPD issued violations or if you need to call 311 again.",,thankyou_screens.ZU0eqKH6zETy.properties.description
