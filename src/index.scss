@@ -1,0 +1,19 @@
+@import "@justfixnyc/component-library/dist/src/assets/index.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Degular";
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+// hide netlify banners on preview deploys
+div[data-netlify-site-id="46a89a0b-e7db-42d1-8404-9502ca2c5013"] {
+  display: none !important;
+}

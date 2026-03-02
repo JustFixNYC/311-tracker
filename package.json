@@ -1,0 +1,52 @@
+{
+  "name": "311-tracker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier --write --ignore-unknown \"src/**/*\"",
+    "extract": "lingui extract"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "16.1.0",
+    "@hookform/resolvers": "^5.2.1",
+    "@justfixnyc/component-library": "0.56.4",
+    "@lingui/react": "^5.3.3",
+    "@rollbar/react": "^0.12.0-beta",
+    "contentful": "^11.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.62.0",
+    "react-router-dom": "^6.26.2",
+    "rollbar": "^2.26.4",
+    "swr": "^2.2.5",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@lingui/cli": "^5.3.3",
+    "@lingui/swc-plugin": "^5.6.0",
+    "@lingui/vite-plugin": "^5.3.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "classnames": "^2.5.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.79.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
