@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import {
   findAnswerByRefRegex,
@@ -114,9 +115,10 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
     },
     // Defines how to modify attributes
     UpdateExpression:
-      "set fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
+      "set userId = :id, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
     ExpressionAttributeValues: {
       // Placeholder values for the update
+      ":id": data.userId,
       ":fn": data.name,
       ":l": data.language3,
       ":o": "upt",
@@ -160,6 +162,7 @@ export const handleUptResponse = async (
   const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
   const srNumbers = [...new Set(srNumbersAll)];
   const srNumbersCsv = srNumbers.join(",");
+  const userId = crypto.createHash('sha256').update(phone).digest('hex');
 
   const issuesNotes = getIssuesNotes(answers);
   const checklistTitle = "UPT 311 Checklist";
@@ -174,6 +177,7 @@ export const handleUptResponse = async (
 
   const dbAttributes = {
     phone: phone,
+    userId: userId,
     language3: language3,
     org: "upt",
     name: name,
@@ -192,6 +196,7 @@ export const handleUptResponse = async (
     checklist_311_url: checklistUrl,
     hpd_building_id: hpdBuildingId,
     sr_311_numbers: srNumbersCsv,
+    user_id_311_tracker: userId,
   };
 
   await textitClient.addOrUpdateContact(phone, name, language3, textitFields);
