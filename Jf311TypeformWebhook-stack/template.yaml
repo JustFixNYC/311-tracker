@@ -27,6 +27,7 @@ Resources:
           TEXTIT_SECRET_NAME: JFTextitToken
           AWS_REGION_NAME: us-east-1
           CHECKLIST_BUCKET: justfix-311-checklists
+          DB_GSI_PHONE_NAME: gsi_phone
       EphemeralStorage:
         Size: 512
       Architectures:

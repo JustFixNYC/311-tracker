@@ -1,5 +1,5 @@
-import crypto from 'node:crypto';
-import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import crypto from "node:crypto";
+import { UpdateCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import {
   findAnswerByRefRegex,
   filterAnswersByRefRegex,
@@ -107,15 +107,52 @@ const getHpdBuildingId = (address) => {
   return ADDRESS_BUILDING_ID_MAP[address] || "";
 };
 
+const getUserByPhone = async (ddbDocClient, phone) => {
+  const params = {
+    TableName: process.env.DB_TABLE,
+    IndexName: process.env.DB_GSI_PHONE_NAME,
+    KeyConditionExpression: `phone = :gsi_val`,
+    ExpressionAttributeValues: {
+      ":gsi_val": phone,
+    },
+  };
+  try {
+    const data = await ddbDocClient.send(new QueryCommand(params));
+    console.log("User by phone:", JSON.stringify(data, null, 2));
+    if (!data.Items || data.Items.length === 0) {
+      return undefined;
+    }
+    return data.Items[0];
+  } catch (err) {
+    console.error("Unable to query GSI. Error:", err);
+  }
+};
+
 const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
+  const user = await getUserByPhone(ddbDocClient, data.phone);
+
+  // If user exists update using their id, otherwise use newly generated id
+  // if user exists add new SR numbers to existing list, otherwise use new set
+  // all other fields get overwritten for now
+  let userId, srNumbers;
+  if (!!user.id) {
+    userId = user.id;
+    const allSrNumbers = [...data.srNumbers, ...user.srNumbers];
+    const uniqueSrNumbers = [...new Set(allSrNumbers)].filter((x) => !!x);
+    srNumbers = uniqueSrNumbers;
+  } else {
+    userId = data.userId;
+    srNumbers = data.srNumbers;
+  }
+
   const params = {
     TableName: process.env.DB_TABLE,
     Key: {
-      id: data.userId, // Primary Key of the item to update
+      id: userId, // Primary Key of the item to update
     },
     // Defines how to modify attributes
     UpdateExpression:
-      "set phone = :p, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
+      "set phone = :p, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss, srNumbers = :sr",
     ExpressionAttributeValues: {
       // Placeholder values for the update
       ":p": data.phone,
@@ -127,6 +164,7 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
       ":hpdid": data.hpdBuildingId,
       ":checkurl": data.checklistUrl,
       ":iss": data.issuesNotes,
+      ":sr": srNumbers,
     },
     ReturnValues: "UPDATED_NEW", // Returns the new values of the updated attributes
   };
@@ -162,7 +200,7 @@ export const handleUptResponse = async (
   const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
   const srNumbers = [...new Set(srNumbersAll)];
   const srNumbersCsv = srNumbers.join(",");
-  const userId = crypto.createHash('sha256').update(phone).digest('hex');
+  const userId = crypto.createHash("sha256").update(phone).digest("hex");
 
   const issuesNotes = getIssuesNotes(answers);
   const checklistTitle = "UPT 311 Checklist";
