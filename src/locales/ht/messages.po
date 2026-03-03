@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Language: es\n"
+"Language: ht\n"
 "Language-Team: \n"
 "Last-Translator: \n"
 "MIME-Version: 1.0\n"
@@ -17,93 +17,93 @@ msgstr ""
 #: src/Components/Pages/Home/Home.tsx:7
 #: src/Components/SrForm/SrForm.tsx:19
 msgid "311 Tracker"
-msgstr "311 Rastreador"
+msgstr "311 Tracker"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:168
 msgid "Add another number"
-msgstr "Añadir otro número"
+msgstr "Ajoute yon lòt nimewo"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:41
 msgid "Add at least one service request number"
-msgstr "Añadir al menos un número de solicitud de servicio"
+msgstr "Ajoute omwen yon nimewo demann sèvis."
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:100
 msgid "Add service requests"
-msgstr "Añadir solicitudes de servicio"
+msgstr "Ajoute demann sèvis"
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:13
 #~ msgid "Dynamsoft"
-#~ msgstr "Dynamsoft"
+#~ msgstr "Dinamisof"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:38
 msgid "Format must be 311-12345678"
-msgstr "El formato debe ser 311-12345678"
+msgstr "Fòma a dwe 311-12345678"
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:23
 #~ msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
-#~ msgstr "O, si ya estás en un dispositivo móvil con cámara, <0>lanza el escáner</0>"
+#~ msgstr "Oswa, si ou deja sou yon aparèy mobil ki gen yon kamera, <0>lanse scanner la</0>."
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:113
 msgid "Phone number"
-msgstr "Número de teléfono"
+msgstr "Nimewo telefòn"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:27
 msgid "Phone number is required"
-msgstr "Número de teléfono obligatorio"
+msgstr "Nimewo telefòn obligatwa"
 
 #: src/types/srFormTypes.ts:13
 msgid "Phone number is required for follow up"
-msgstr "Se requiere un número de teléfono para el seguimiento"
+msgstr "Nimewo telefòn obligatwa pou swivi."
 
 #: src/types/srFormTypes.ts:14
 #: src/types/srFormTypes.ts:20
 msgid "Please enter a complete US phone number"
-msgstr "Introduzca un número de teléfono completo de EE.UU."
+msgstr "Tanpri antre yon nimewo telefòn Ameriken konplè."
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:30
 msgid "Please enter a complete US phone number (10 digits)"
-msgstr "Introduzca un número de teléfono completo de EE.UU. (10 dígitos)"
+msgstr "Tanpri antre yon nimewo telefòn Ozetazini konplè (10 chif)"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:151
 msgid "Remove"
-msgstr "Eliminar"
+msgstr "Retire"
 
 #: src/Components/Pages/Home/Home.tsx:9
 #~ msgid "Rent History Analyzer"
-#~ msgstr "Analizador del historial de alquileres"
+#~ msgstr "Analizatè Istwa Lwaye"
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:16
 #~ msgid "Scan QR code with your smartphone to use your camera to scan your rent history"
-#~ msgstr "Escanee el código QR con su smartphone para utilizar su cámara para escanear su historial de alquileres"
+#~ msgstr "Eskane kòd QR la ak telefòn entèlijan ou pou itilize kamera a eskane istwa lwaye ou."
 
 #: src/Components/Pages/Dynamsoft/DynamsoftLauncher.tsx:48
 #~ msgid "Scan your rent history"
-#~ msgstr "Escanee su historial de alquileres"
+#~ msgstr "Eskane istwa lokasyon ou"
 
 #: src/Components/ScanBotDemo/ScanBotDemo.tsx:13
 #~ msgid "ScanBot"
-#~ msgstr "ScanBot"
+#~ msgstr "Eskanè Bot"
 
 #: src/Components/Pages/Home/Home.tsx:10
 #~ msgid "ScanBot Demo"
-#~ msgstr "Demostración de ScanBot"
+#~ msgstr "Demo ScanBot"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:142
 msgid "Service request"
-msgstr "Solicitud de servicio"
+msgstr "Demann sèvis"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:37
 msgid "Service request number is required"
-msgstr "Se requiere el número de solicitud de servicio"
+msgstr "Nimewo demann sèvis la obligatwa."
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:128
 msgid "Service request numbers (format: 311-12345678)"
-msgstr "Números de solicitud de servicio (formato: 311-12345678)"
+msgstr "Nimewo demann sèvis (fòma: 311-12345678)"
 
 #: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:180
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Soumèt"
 
 #: src/Components/Pages/Home/Home.tsx:12
 #~ msgid "Upload your rent history"
-#~ msgstr "Cargue su historial de alquileres"
+#~ msgstr "Chaje istwa lokasyon ou"

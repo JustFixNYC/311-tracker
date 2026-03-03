@@ -69,3 +69,20 @@ rm typeform/hat/upt-311-typeform.eng.mo
 potrans deepl typeform/eng/upt-311-typeform.eng.po typeform/spa --from=en --to=es --apikey="$DEEPL_API_KEY" -vvv
 mv typeform/spa/upt-311-typeform.eng.po typeform/spa/upt-311-typeform.spa.po
 rm typeform/spa/upt-311-typeform.eng.mo
+
+
+# Website
+# -------
+
+# Haitian
+
+potrans deepl src/locales/ht/messages.po src/locales/ht --from=en --to=ht --apikey="$DEEPL_API_KEY" -vvv
+mv src/locales/ht/messages.po src/locales/ht/messages.po
+rm src/locales/ht/messages.mo
+
+# Spanish (Latin American)
+
+potrans deepl src/locales/es/messages.po src/locales/es --from=en --to=es --apikey="$DEEPL_API_KEY" -vvv
+mv src/locales/es/messages.po src/locales/es/messages.po
+rm src/locales/es/messages.mo
+
