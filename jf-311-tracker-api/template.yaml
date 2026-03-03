@@ -1,0 +1,67 @@
+# This is the SAM template that represents the architecture of your serverless application
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-template-basics.html
+
+# The AWSTemplateFormatVersion identifies the capabilities of the template
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
+AWSTemplateFormatVersion: 2010-09-09
+Description: jf-311-tracker-api
+
+# Transform section specifies one or more macros that AWS CloudFormation uses to process your template
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
+Transform:
+  - AWS::Serverless-2016-10-31
+
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+    Description: The environment name (dev, prod, etc.)
+  DynamoDbTableName:
+    Type: String
+    Default: Jf311TrackerUsers
+
+
+# Resources declares the AWS resources that you want to include in the stack
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+Resources:
+  # Each Lambda function is defined by properties:
+  # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+
+  # This is a Lambda function config associated with the source code: get-all-items.js
+  Jf311TrackerApi:
+    Type: AWS::Serverless::Function
+    FunctionName: !Sub jf-311-tracker-api-${Environment}-lambda # Dynamic Naming
+    Properties:
+      Handler: src/index.handler
+      Runtime: nodejs24.x
+      Architectures:
+        - x86_64
+      MemorySize: 128
+      Timeout: 100
+      Description: null
+      Policies:
+        # Give Create/Read/Update/Delete Permissions to the SampleTable
+        - DynamoDBCrudPolicy:
+            TableName: !Sub ${DynamoDbTableName}
+      Environment:
+        Variables:
+          # Make table name accessible as environment variable from function code during execution
+          DB_TABLE: !Sub ${DynamoDbTableName}
+          AWS_REGION_NAME: !Sub ${AWS::Region}
+          DB_GSI_PHONE_NAME: gsi_phone
+      Events:
+        ApiGETuserComplaints:
+          Type: Api
+          Properties:
+            Path: /complaints/{id}
+            Method: GET
+        ApiPOSTsrNumbers:
+          Type: Api
+          Properties:
+            Path: /srNumbers
+            Method: POST
+
+Outputs:
+  WebEndpoint:
+    Description: API Gateway endpoint URL for Prod stage
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${Environment}/
