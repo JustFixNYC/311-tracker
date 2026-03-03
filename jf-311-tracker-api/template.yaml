@@ -20,7 +20,6 @@ Parameters:
     Type: String
     Default: Jf311TrackerUsers
 
-
 # Resources declares the AWS resources that you want to include in the stack
 # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
 Resources:
@@ -43,12 +42,25 @@ Resources:
         # Give Create/Read/Update/Delete Permissions to the SampleTable
         - DynamoDBCrudPolicy:
             TableName: !Sub ${DynamoDbTableName}
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - secretsmanager:GetSecretValue
+              Resource: 
+                - !Sub "arn:${AWS::Partition}:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:JfGoogleServiceAccount311Tracker-zHdjaU"
+                - !Sub "arn:${AWS::Partition}:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:Jf311TrackerDeepLApiToken-uVXKVQ"
       Environment:
         Variables:
           # Make table name accessible as environment variable from function code during execution
           DB_TABLE: !Sub ${DynamoDbTableName}
           AWS_REGION_NAME: !Sub ${AWS::Region}
           DB_GSI_PHONE_NAME: gsi_phone
+          DB_GSI_BUILDING_ID: gsi_hpdBuildingId
+          GOOGLE_SECRET_NAME: JfGoogleServiceAccount311Tracker
+          DEEPL_SECRET_NAME: Jf311TrackerDeepLApiToken
+          GOOGLE_SPREADSHEET_ID: 1WGSimQE4pr8Zxd0fmSImerzATV_ga6VXKMhFdZGktyI
+          GOOGLE_SHEET_ID: 1085473912
       Events:
         ApiGETuserComplaints:
           Type: Api

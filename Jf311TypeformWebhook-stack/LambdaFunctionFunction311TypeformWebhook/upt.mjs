@@ -186,6 +186,7 @@ export const handleUptResponse = async (
     hpdBuildingId: hpdBuildingId,
     checklistUrl: checklistUrl,
     issuesNotes: issuesNotes,
+    // TODO: add to existing list don't overwrite
     srNumbers: srNumbers,
   };
 
