@@ -135,7 +135,7 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
   // if user exists add new SR numbers to existing list, otherwise use new set
   // all other fields get overwritten for now
   let userId, srNumbers;
-  if (!!user.id) {
+  if (!!user?.id) {
     userId = user.id;
     const allSrNumbers = [...data.srNumbers, ...user.srNumbers];
     const uniqueSrNumbers = [...new Set(allSrNumbers)].filter((x) => !!x);

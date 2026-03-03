@@ -34,3 +34,7 @@ Resources:
         - x86_64
       Tracing: PassThrough
       CodeUri: LambdaFunctionFunction311TypeformWebhook
+      Policies:
+        # Give Create/Read/Update/Delete Permissions to the SampleTable
+        - DynamoDBCrudPolicy:
+            TableName: Jf311TrackerUsers
