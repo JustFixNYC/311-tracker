@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { Trans } from "@lingui/react/macro";
-import { useForm, useFieldArray, Resolver } from "react-hook-form";
+import { Controller, useForm, useFieldArray, Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import type { I18n } from "@lingui/core";
 import { useLingui } from "@lingui/react";
 import { msg } from "@lingui/core/macro";
-import { TextInput, Button, FormGroup } from "@justfixnyc/component-library";
+import {
+  TextInput,
+  Button,
+  FormGroup,
+  Icon,
+} from "@justfixnyc/component-library";
+import {
+  formatPhoneNumber,
+  parseFormattedPhoneNumber,
+} from "../../../utils/form-utils";
 
 // Format: 311-12345678 (311- followed by 8 digits)
 const SR_NUMBER_REGEX = /^311-\d{8}$/;
@@ -26,10 +35,7 @@ const addFormSchema = (i18n: I18n) =>
           value: z
             .string()
             .min(1, i18n._(msg`Service request number is required`))
-            .regex(
-              SR_NUMBER_REGEX,
-              i18n._(msg`Format must be 311-12345678`)
-            ),
+            .regex(SR_NUMBER_REGEX, i18n._(msg`Format must be 311-12345678`)),
         })
       )
       .min(1, i18n._(msg`Add at least one service request number`)),
@@ -68,10 +74,10 @@ export const AddSRNumbers: React.FC = () => {
     setSubmitError(null);
     try {
       const body = {
-        phone: "+1"+data.phone_number.replace(/\D/g, ""),
+        phone: "+1" + data.phone_number.replace(/\D/g, ""),
         srNumbers: data.sr_numbers.map((item) => item.value),
       };
-      const apiUrl = import.meta.env.VITE_311_TRACKER_API_URL+"/srNumbers";
+      const apiUrl = import.meta.env.VITE_311_TRACKER_API_URL + "/srNumbers";
       const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
@@ -94,16 +100,27 @@ export const AddSRNumbers: React.FC = () => {
         <Trans>Add service requests</Trans>
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
-        <TextInput
-          id="phone_number"
-          type="tel"
-          inputMode="numeric"
-          autoComplete="tel"
-          placeholder="2125551234"
-          labelText={i18n._(msg`Phone number`)}
-          invalid={!!errors.phone_number}
-          invalidText={errors.phone_number?.message}
-          {...register("phone_number")}
+        <Controller
+          name="phone_number"
+          control={control}
+          render={({ field }) => (
+            <TextInput
+              {...field}
+              id="phone_number"
+              type="tel"
+              inputMode="numeric"
+              autoComplete="tel"
+              labelText={i18n._(msg`Phone number`)}
+              placeholder="(212) 456-7890"
+              value={formatPhoneNumber(field.value)}
+              onChange={(e) =>
+                field.onChange(parseFormattedPhoneNumber(e.target.value))
+              }
+              invalid={!!errors.phone_number}
+              invalidText={errors.phone_number?.message}
+              invalidRole="status"
+            />
+          )}
         />
 
         <FormGroup
@@ -114,35 +131,42 @@ export const AddSRNumbers: React.FC = () => {
           invalidText={errors.sr_numbers?.message}
           className="add-sr-numbers-page__sr-numbers"
         >
-          {fields.map((field, index) => (
-            <div key={field.id} className="add-sr-numbers-page__sr-row">
-              <TextInput
-                id={`sr_numbers.${index}`}
-                type="text"
-                placeholder="311-12345678"
-                labelText={`${i18n._(msg`Service request`)} #${index + 1}`}
-                invalid={!!errors.sr_numbers?.[index]?.value}
-                invalidText={errors.sr_numbers?.[index]?.value?.message}
-                {...register(`sr_numbers.${index}.value`)}
-              />
-              {fields.length > 1 ? (
-                <Button
-                  type="button"
-                  variant="secondary"
-                  labelText={i18n._(msg`Remove`)}
-                  onClick={() => remove(index)}
-                  className="add-sr-numbers-page__remove"
-                />
-              ) : null}
+          {!!fields.length && (
+            <div className="additional-sr-form-group">
+              {fields.map((field, index) => (
+                <section key={field.id} className="additional-sr-input">
+                  <TextInput
+                    {...register(`sr_numbers.${index}.value`)}
+                    id={`form-sr_numbers-${index}`}
+                    labelText=""
+                    aria-label={`${i18n._(msg`Service request`)} #${index + 1}`}
+                    placeholder="311-12345678"
+                    invalid={!!errors.sr_numbers?.[index]?.value}
+                    invalidText={errors.sr_numbers?.[index]?.value?.message}
+                    invalidRole="status"
+                    type="text"
+                  />
+                  {fields.length > 1 ? (
+                    <Button
+                      labelText={i18n._(msg`Remove`)}
+                      labelIcon="xmark"
+                      variant="tertiary"
+                      size="small"
+                      type="button"
+                      onClick={() => remove(index)}
+                    />
+                  ) : null}
+                </section>
+              ))}
             </div>
-          ))}
-          <Button
+          )}
+          <button
+            className="text-link-button jfcl-link"
             type="button"
-            variant="secondary"
-            labelText={i18n._(msg`Add another`)}
             onClick={() => append({ value: "" })}
-            className="add-sr-numbers-page__add-another"
-          />
+          >
+            <Icon icon="plus" /> {i18n._(msg`Add another number`)}
+          </button>
         </FormGroup>
 
         {submitError && (
