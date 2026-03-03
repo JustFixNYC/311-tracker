@@ -20,7 +20,7 @@ Resources:
       RecursiveLoop: Terminate
       Environment:
         Variables:
-          DB_TABLE: Users311Tracker
+          DB_TABLE: Jf311TrackerUsers
           UPT_FORM_ID: UrIJg4oD
           UPT_TEXTIT_GROUP: 13099c82-e3bf-42bc-b385-7ed8c05506de
           TYPEFORM_SECRET_NAME: Jf311TypeformWebhookSecret

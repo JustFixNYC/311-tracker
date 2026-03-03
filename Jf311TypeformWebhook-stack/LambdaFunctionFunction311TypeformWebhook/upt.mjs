@@ -111,14 +111,14 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
   const params = {
     TableName: process.env.DB_TABLE,
     Key: {
-      phone: data.phone, // Primary Key of the item to update
+      id: data.userId, // Primary Key of the item to update
     },
     // Defines how to modify attributes
     UpdateExpression:
-      "set userId = :id, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
+      "set phone = :p, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
     ExpressionAttributeValues: {
       // Placeholder values for the update
-      ":id": data.userId,
+      ":p": data.phone,
       ":fn": data.name,
       ":l": data.language3,
       ":o": "upt",
