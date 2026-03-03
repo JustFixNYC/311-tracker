@@ -13,25 +13,72 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/Components/Pages/Form/Form.tsx:7
+#: src/Components/Pages/Home/Home.tsx:7
+#: src/Components/SrForm/SrForm.tsx:19
+msgid "311 Tracker"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:168
+msgid "Add another number"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:41
+msgid "Add at least one service request number"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:100
+msgid "Add service requests"
+msgstr ""
+
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:13
-msgid "Dynamsoft"
+#~ msgid "Dynamsoft"
+#~ msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:38
+msgid "Format must be 311-12345678"
 msgstr ""
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:23
-msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
+#~ msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
+#~ msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:113
+msgid "Phone number"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:27
+msgid "Phone number is required"
+msgstr ""
+
+#: src/types/srFormTypes.ts:13
+msgid "Phone number is required for follow up"
+msgstr ""
+
+#: src/types/srFormTypes.ts:14
+#: src/types/srFormTypes.ts:20
+msgid "Please enter a complete US phone number"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:30
+msgid "Please enter a complete US phone number (10 digits)"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:151
+msgid "Remove"
 msgstr ""
 
 #: src/Components/Pages/Home/Home.tsx:9
-msgid "Rent History Analyzer"
-msgstr ""
+#~ msgid "Rent History Analyzer"
+#~ msgstr ""
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:16
-msgid "Scan QR code with your smartphone to use your camera to scan your rent history"
-msgstr ""
+#~ msgid "Scan QR code with your smartphone to use your camera to scan your rent history"
+#~ msgstr ""
 
 #: src/Components/Pages/Dynamsoft/DynamsoftLauncher.tsx:48
-msgid "Scan your rent history"
-msgstr ""
+#~ msgid "Scan your rent history"
+#~ msgstr ""
 
 #: src/Components/ScanBotDemo/ScanBotDemo.tsx:13
 #~ msgid "ScanBot"
@@ -41,6 +88,22 @@ msgstr ""
 #~ msgid "ScanBot Demo"
 #~ msgstr ""
 
-#: src/Components/Pages/Home/Home.tsx:12
-msgid "Upload your rent history"
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:142
+msgid "Service request"
 msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:37
+msgid "Service request number is required"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:128
+msgid "Service request numbers (format: 311-12345678)"
+msgstr ""
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:180
+msgid "Submit"
+msgstr ""
+
+#: src/Components/Pages/Home/Home.tsx:12
+#~ msgid "Upload your rent history"
+#~ msgstr ""
