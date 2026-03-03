@@ -13,6 +13,56 @@ body {
   height: 100%;
 }
 
+.add-sr-numbers-page {
+  max-width: 28rem;
+
+  &__field,
+  &__sr-numbers {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+  }
+
+  &__sr-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+
+    input {
+      flex: 1;
+    }
+  }
+
+  &__error {
+    display: block;
+    color: #c00;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  &__remove {
+    flex-shrink: 0;
+  }
+
+  &__add-another {
+    margin-bottom: 1rem;
+  }
+
+  button[type="submit"] {
+    margin-top: 0.5rem;
+  }
+}
+
 // hide netlify banners on preview deploys
 div[data-netlify-site-id="46a89a0b-e7db-42d1-8404-9502ca2c5013"] {
   display: none !important;
