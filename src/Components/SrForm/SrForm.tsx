@@ -6,21 +6,12 @@ import { useLingui } from "@lingui/react";
 
 export const SrForm: React.FC = () => {
   const { i18n } = useLingui();
-  const formMethods = useForm<SrNumbersFields>({
+  useForm<SrNumbersFields>({
     // Issue with the inferred type being "unknown" when preprocess() is used to
     // handle values that should be changed to undefined
     resolver: zodResolver(srNumbersSchema(i18n)) as Resolver<SrNumbersFields>,
     mode: "onSubmit",
   });
-
-  const {
-    reset,
-    trigger,
-    handleSubmit,
-    setValue,
-    getValues,
-    formState: { errors },
-  } = formMethods;
 
   return (
     <div className="sr-form">
