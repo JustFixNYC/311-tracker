@@ -3,7 +3,12 @@ import { Navigate, NavLink, useLocation } from "react-router-dom";
 import { I18nProvider } from "@lingui/react";
 import { i18n } from "@lingui/core";
 
-import { SupportedLocale, defaultLocale, isSupportedLocale } from "./i18n-base";
+import {
+  SupportedLocale,
+  defaultLocale,
+  isSupportedLocale,
+  languageNames,
+} from "./i18n-base";
 
 // Dynamic activation function that loads catalogs on demand
 export async function dynamicActivate(locale: SupportedLocale) {
@@ -118,18 +123,22 @@ export function removeLocalePrefix(path: string): string {
 
 /**
  * A UI affordance that allows the user to switch locales.
- *
- * Since we currently only have two locales, this just offers a toggle to the
- * other language.
  */
 export function LocaleSwitcher() {
   const location = useLocation();
   const to = (toLocale: SupportedLocale) =>
     `/${toLocale}${removeLocalePrefix(location.pathname)}`;
 
+  const locales = Object.keys(languageNames) as SupportedLocale[];
+
   return (
     <span className="language-toggle">
-      <NavLink to={to("en")}>EN</NavLink>/<NavLink to={to("es")}>ES</NavLink>
+      {locales.map((code, i) => (
+        <React.Fragment key={code}>
+          {i > 0 && " / "}
+          <NavLink to={to(code)}>{code.toUpperCase()}</NavLink>
+        </React.Fragment>
+      ))}
     </span>
   );
 }
