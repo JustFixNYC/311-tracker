@@ -111,7 +111,7 @@ export const AddSRNumbers: React.FC = () => {
               inputMode="numeric"
               autoComplete="tel"
               labelText={i18n._(msg`Phone number`)}
-              placeholder="(212) 456-7890"
+              placeholder="(123) 456-7890"
               value={formatPhoneNumber(field.value)}
               onChange={(e) =>
                 field.onChange(parseFormattedPhoneNumber(e.target.value))
