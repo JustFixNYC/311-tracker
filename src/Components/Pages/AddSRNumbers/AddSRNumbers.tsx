@@ -69,9 +69,11 @@ export const AddSRNumbers: React.FC = () => {
   });
 
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const onSubmit = async (data: AddFormFields) => {
     setSubmitError(null);
+    setSubmitSuccess(false);
     try {
       const body = {
         phone: "+1" + data.phone_number.replace(/\D/g, ""),
@@ -85,7 +87,9 @@ export const AddSRNumbers: React.FC = () => {
         },
         body: JSON.stringify(body),
       });
-      if (!response.ok) {
+      if (response.ok) {
+        setSubmitSuccess(true);
+      } else {
         throw new Error(`API error: ${response.status}`);
       }
     } catch (e) {
@@ -169,10 +173,27 @@ export const AddSRNumbers: React.FC = () => {
           </button>
         </FormGroup>
 
+        {submitSuccess && (
+          <div className="success-message" role="status">
+            <Icon icon="check" />
+            <Trans>Your response has been submitted</Trans>
+          </div>
+        )}
         {submitError && (
-          <p className="add-sr-numbers-page__error" role="alert">
-            {submitError}
-          </p>
+          <div className="error-message" role="alert">
+            <Icon icon="xmark" />
+            <Trans>
+              An error occurred. Please fill out the{" "}
+              <a
+                href="https://bit.ly/upt-311"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Typeform
+              </a>{" "}
+              before using this form.
+            </Trans>
+          </div>
         )}
         <Button
           type="submit"

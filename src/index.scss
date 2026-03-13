@@ -85,6 +85,32 @@ body {
     margin-top: 0.25rem;
   }
 
+  .success-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: green;
+    margin-bottom: 1rem;
+
+    .jfcl-icon,
+    svg {
+      color: green;
+      flex-shrink: 0;
+    }
+  }
+
+  .error-message {
+    margin-bottom: 1rem;
+    color: darkred;
+
+    .jfcl-icon,
+    svg {
+      color: red;
+      flex-shrink: 0;
+      margin-right: 0.5rem;
+    }
+  }
+
   button[type="submit"] {
     margin-top: 0.5rem;
   }
