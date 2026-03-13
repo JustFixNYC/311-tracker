@@ -50,6 +50,14 @@ Resources:
               Resource: 
                 - !Sub "arn:${AWS::Partition}:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:JfGoogleServiceAccount311Tracker-zHdjaU"
                 - !Sub "arn:${AWS::Partition}:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:Jf311TrackerDeepLApiToken-uVXKVQ"
+                - !Sub "arn:${AWS::Partition}:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:JfNycdbWowUser-oVHvqg"
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - s3:PutObject
+              Resource: 
+                - "arn:aws:s3:::justfix-311-checklists/*"
       Environment:
         Variables:
           # Make table name accessible as environment variable from function code during execution
@@ -59,8 +67,11 @@ Resources:
           DB_GSI_BUILDING_ID: gsi_hpdBuildingId
           GOOGLE_SECRET_NAME: JfGoogleServiceAccount311Tracker
           DEEPL_SECRET_NAME: Jf311TrackerDeepLApiToken
+          NYCDB_SECRET_NAME: JfNycdbWowUser
           GOOGLE_SPREADSHEET_ID: 1WGSimQE4pr8Zxd0fmSImerzATV_ga6VXKMhFdZGktyI
-          GOOGLE_SHEET_ID: 1085473912
+          GOOGLE_TYPEFORM_SHEET_ID: 190132237
+          GOOGLE_VIOLATIONS_SHEET_ID: 867808034
+          CHECKLIST_BUCKET: justfix-311-checklists
       Events:
         ApiGETuserComplaints:
           Type: Api
