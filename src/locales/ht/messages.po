@@ -19,7 +19,7 @@ msgstr ""
 msgid "311 Tracker"
 msgstr "311 Tracker"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:168
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:172
 msgid "Add another number"
 msgstr "Ajoute yon lòt nimewo"
 
@@ -27,9 +27,13 @@ msgstr "Ajoute yon lòt nimewo"
 msgid "Add at least one service request number"
 msgstr "Ajoute omwen yon nimewo demann sèvis."
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:100
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:104
 msgid "Add service requests"
 msgstr "Ajoute demann sèvis"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:185
+msgid "An error occurred. Please fill out the <0>Typeform</0> before using this form."
+msgstr "Yon erè parèt. Tanpri ranpli <0>Typeform</0> anvan ou itilize fòm sa a."
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:13
 #~ msgid "Dynamsoft"
@@ -43,7 +47,7 @@ msgstr "Fòma a dwe 311-12345678"
 #~ msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
 #~ msgstr "Oswa, si ou deja sou yon aparèy mobil ki gen yon kamera, <0>lanse scanner la</0>."
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:113
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:117
 msgid "Phone number"
 msgstr "Nimewo telefòn"
 
@@ -64,7 +68,7 @@ msgstr "Tanpri antre yon nimewo telefòn Ameriken konplè."
 msgid "Please enter a complete US phone number (10 digits)"
 msgstr "Tanpri antre yon nimewo telefòn Ozetazini konplè (10 chif)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:151
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:155
 msgid "Remove"
 msgstr "Retire"
 
@@ -88,7 +92,7 @@ msgstr "Retire"
 #~ msgid "ScanBot Demo"
 #~ msgstr "Demo ScanBot"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:142
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:146
 msgid "Service request"
 msgstr "Demann sèvis"
 
@@ -96,14 +100,18 @@ msgstr "Demann sèvis"
 msgid "Service request number is required"
 msgstr "Nimewo demann sèvis la obligatwa."
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:128
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:132
 msgid "Service request numbers (format: 311-12345678)"
 msgstr "Nimewo demann sèvis (fòma: 311-12345678)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:180
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:201
 msgid "Submit"
 msgstr "Soumèt"
 
 #: src/Components/Pages/Home/Home.tsx:12
 #~ msgid "Upload your rent history"
 #~ msgstr "Chaje istwa lokasyon ou"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:179
+msgid "Your response has been submitted"
+msgstr "Repons ou a soumèt."

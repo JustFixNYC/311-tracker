@@ -19,7 +19,7 @@ msgstr ""
 msgid "311 Tracker"
 msgstr "311 Tracker"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:168
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:172
 msgid "Add another number"
 msgstr "Add another number"
 
@@ -27,9 +27,13 @@ msgstr "Add another number"
 msgid "Add at least one service request number"
 msgstr "Add at least one service request number"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:100
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:104
 msgid "Add service requests"
 msgstr "Add service requests"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:185
+msgid "An error occurred. Please fill out the <0>Typeform</0> before using this form."
+msgstr "An error occurred. Please fill out the <0>Typeform</0> before using this form."
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:13
 #~ msgid "Dynamsoft"
@@ -43,7 +47,7 @@ msgstr "Format must be 311-12345678"
 #~ msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
 #~ msgstr "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:113
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:117
 msgid "Phone number"
 msgstr "Phone number"
 
@@ -64,7 +68,7 @@ msgstr "Please enter a complete US phone number"
 msgid "Please enter a complete US phone number (10 digits)"
 msgstr "Please enter a complete US phone number (10 digits)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:151
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:155
 msgid "Remove"
 msgstr "Remove"
 
@@ -88,7 +92,7 @@ msgstr "Remove"
 #~ msgid "ScanBot Demo"
 #~ msgstr "ScanBot Demo"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:142
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:146
 msgid "Service request"
 msgstr "Service request"
 
@@ -96,14 +100,18 @@ msgstr "Service request"
 msgid "Service request number is required"
 msgstr "Service request number is required"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:128
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:132
 msgid "Service request numbers (format: 311-12345678)"
 msgstr "Service request numbers (format: 311-12345678)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:180
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:201
 msgid "Submit"
 msgstr "Submit"
 
 #: src/Components/Pages/Home/Home.tsx:12
 #~ msgid "Upload your rent history"
 #~ msgstr "Upload your rent history"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:179
+msgid "Your response has been submitted"
+msgstr "Your response has been submitted"

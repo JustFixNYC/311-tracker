@@ -19,7 +19,7 @@ msgstr ""
 msgid "311 Tracker"
 msgstr "311 Rastreador"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:168
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:172
 msgid "Add another number"
 msgstr "Añadir otro número"
 
@@ -27,9 +27,13 @@ msgstr "Añadir otro número"
 msgid "Add at least one service request number"
 msgstr "Añadir al menos un número de solicitud de servicio"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:100
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:104
 msgid "Add service requests"
 msgstr "Añadir solicitudes de servicio"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:185
+msgid "An error occurred. Please fill out the <0>Typeform</0> before using this form."
+msgstr "Se ha producido un error. Rellene el <0>Typeform</0> antes de utilizar este formulario."
 
 #: src/Components/DynamsoftDemo/DynamsoftDemo.tsx:13
 #~ msgid "Dynamsoft"
@@ -43,7 +47,7 @@ msgstr "El formato debe ser 311-12345678"
 #~ msgid "Or, if you are already on a mobile device with a camera, <0>launch scanner</0>"
 #~ msgstr "O, si ya estás en un dispositivo móvil con cámara, <0>lanza el escáner</0>"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:113
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:117
 msgid "Phone number"
 msgstr "Número de teléfono"
 
@@ -64,7 +68,7 @@ msgstr "Introduzca un número de teléfono completo de EE.UU."
 msgid "Please enter a complete US phone number (10 digits)"
 msgstr "Introduzca un número de teléfono completo de EE.UU. (10 dígitos)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:151
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:155
 msgid "Remove"
 msgstr "Eliminar"
 
@@ -88,7 +92,7 @@ msgstr "Eliminar"
 #~ msgid "ScanBot Demo"
 #~ msgstr "Demostración de ScanBot"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:142
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:146
 msgid "Service request"
 msgstr "Solicitud de servicio"
 
@@ -96,14 +100,18 @@ msgstr "Solicitud de servicio"
 msgid "Service request number is required"
 msgstr "Se requiere el número de solicitud de servicio"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:128
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:132
 msgid "Service request numbers (format: 311-12345678)"
 msgstr "Números de solicitud de servicio (formato: 311-12345678)"
 
-#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:180
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:201
 msgid "Submit"
 msgstr "Enviar"
 
 #: src/Components/Pages/Home/Home.tsx:12
 #~ msgid "Upload your rent history"
 #~ msgstr "Cargue su historial de alquileres"
+
+#: src/Components/Pages/AddSRNumbers/AddSRNumbers.tsx:179
+msgid "Your response has been submitted"
+msgstr "Su respuesta ha sido enviada."
