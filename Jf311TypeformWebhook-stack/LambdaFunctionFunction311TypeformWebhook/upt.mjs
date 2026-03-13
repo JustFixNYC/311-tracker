@@ -101,6 +101,11 @@ const ADDRESS_BUILDING_ID_MAP = {
   "86-20 Park Lane South, Queens": "686953",
   "87-50 Kingston Place, Queens": "671254",
   "63-70 Austin Street, Queens": "629716",
+  "3657 Broadway, Manhattan": "8101",
+  "3647 Broadway, Manhattan": "8097",
+  "961 Washington Ave, Brooklyn": "388952",
+  "671 West 193 Street, Manhattan": "43647",
+  "251 Sherman Ave, Manhattan": "27603",
 };
 
 const getHpdBuildingId = (address) => {
@@ -211,6 +216,7 @@ export const handleUptResponse = async (
     checklistTitle,
     checklistSubtitle,
     "upt",
+    userId,
   );
 
   const dbAttributes = {

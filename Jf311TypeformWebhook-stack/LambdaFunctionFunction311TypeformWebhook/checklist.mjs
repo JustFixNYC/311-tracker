@@ -2,7 +2,7 @@ import { PutObjectCommand } from "@aws-sdk/client-s3";
 
 export const getIssuesNotes = (answers) => {
   return answers
-    .filter((answer) => answer.field.ref.match("-(?:issues)|(?:notes).{2}$"))
+    .filter((answer) => answer.field.ref.match("-(?:issues)|(?:notes)"))
     .map((answer) => {
       const section = answer.field.ref.slice(0, -3);
       if (section.match(/-issues/)) {
@@ -47,17 +47,7 @@ const makeChecklistHtml = (issuesNotes, title, subtitle) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${title}</title>
-        <style>
-            ul {
-                list-style-type: none;
-            }
-            ul, p {
-                padding-left: 1rem;
-            }
-            li {
-                margin-bottom: 1rem;
-            }
-        </style>
+        <link rel="stylesheet" href="https://justfix-311-checklists.s3.us-east-1.amazonaws.com/checklist-styles-upt.css">
     </head>
     <body>
         <h1>${title}</h1>
@@ -69,11 +59,10 @@ const makeChecklistHtml = (issuesNotes, title, subtitle) => {
   return htmlText;
 };
 
-export const uploadChecklist = async (issuesNotes, s3Client, title, subtitle, subdir) => {
+export const uploadChecklist = async (issuesNotes, s3Client, title, subtitle, subdir, hash) => {
   const checklistHtml = makeChecklistHtml(issuesNotes, title, subtitle);
-  const randomId = crypto.randomUUID();
   const bucket = process.env.CHECKLIST_BUCKET;
-  const key = `${subdir}/${randomId}/checklist.html`;
+  const key = `${subdir}/${hash}/checklist.html`;
   const params = {
     Bucket: bucket,
     Key: key,
