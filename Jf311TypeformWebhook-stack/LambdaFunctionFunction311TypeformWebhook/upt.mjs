@@ -1,5 +1,5 @@
 import crypto from "node:crypto";
-import { UpdateCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
+import { PutCommand, UpdateCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import {
   findAnswerByRefRegex,
   filterAnswersByRefRegex,
@@ -106,6 +106,26 @@ const ADDRESS_BUILDING_ID_MAP = {
   "961 Washington Ave, Brooklyn": "388952",
   "671 West 193 Street, Manhattan": "43647",
   "251 Sherman Ave, Manhattan": "27603",
+  "35 Hillside Ave, Manhattan": "22840",
+  "993 Carroll Street, Brooklyn": "218226",
+  "10 Columbia Place, Brooklyn": "1014563",
+  "40 Columbia Place, Brooklyn": "224141",
+  "2 Columbia Place, Brooklyn": "807986",
+  "4 Columbia Place, Brooklyn": "807986",
+  "6 Columbia Place, Brooklyn": "807986",
+  "30 Joralemon Street, Brooklyn": "807986",
+  "8 Columbia Place, Brooklyn": "807988",
+  "28 Columbia Place, Brooklyn": "807987",
+  "30 Columbia Place, Brooklyn": "1014557",
+  "10 Columbia Place, Brooklyn": "1014563",
+  "14 Columbia Place, Brooklyn": "1009160",
+  "16 Columbia Place, Brooklyn": "807985",
+  "20 Joralemon Street, Brooklyn": "808617",
+  "22 Joralemon Street, Brooklyn": "808617",
+  "24 Joralemon Street, Brooklyn": "808617",
+  "26 Joralemon Street, Brooklyn": "808617",
+  "28 Joralemon Street, Brooklyn": "808617",
+  "32 Joralemon Street, Brooklyn": "",
 };
 
 const getHpdBuildingId = (address) => {
@@ -175,10 +195,42 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
   };
 
   try {
-    const resp = await ddbDocClient.send(new UpdateCommand(params));
+    const resp = await ddbDocClient.send(new PutCommand(params));
     console.log("UpdateItem succeeded:", resp);
   } catch (err) {
     console.error("Unable to update item. Error:", err);
+  }
+};
+
+const addUptTenantDb = async (ddbDocClient, data) => {
+  // We are now allowing duplicates by phone number, since some tenants don't
+  // want to provide their phone number and so others have been using their own
+  // phone number and that's overwritten information.
+
+  const params = {
+    TableName: process.env.DB_TABLE,
+    Item: {
+      id: data.userId,
+      // Placeholder values for the update
+      phone: data.phone,
+      fullName: data.name,
+      language3: data.language3,
+      org: "upt",
+      address: data.address,
+      apartment: data.apartment,
+      hpdBuildingId: data.hpdBuildingId,
+      checklistUrl: data.checklistUrl,
+      issuesNotes: data.issuesNotes,
+      pets: data.pets,
+      srNumbers: data.srNumbers,
+    },
+  };
+
+  try {
+    const resp = await ddbDocClient.send(new PutCommand(params));
+    console.log("Add DB Record succeeded:", resp);
+  } catch (err) {
+    console.error("Unable to add DB record. Error:", err);
   }
 };
 
@@ -200,12 +252,31 @@ export const handleUptResponse = async (
   const hpdBuildingId = getHpdBuildingId(address);
   const languageAnswer = findAnswerByRefRegex(answers, /^language$/)?.choice
     ?.label;
+  const petsChoices = findAnswerByRefRegex(answers, /^pets-.{2}$/)?.choices
+    ?.labels;
+  const petsOther = findAnswerByRefRegex(answers, /^pets-other-.{2}$/)?.text;
+  const pets = [...petsChoices, petsOther]
+    .map((pet) => {
+      if (!pet || ["Other", "Otro", "Lòt"].includes(pet)) return;
+      if (["Perro(s)", "Dog(s)", "Chen"].includes(pet)) return "Dog(s)";
+      if (["Gato(s)", "Chat", "Cat(s)"].includes(pet)) return "Cat(s)";
+      return pet;
+    })
+    .filter(Boolean)
+    .join(",");
   const language3 = toTextitLanguageCode(languageAnswer);
   const srAnswers = filterAnswersByRefRegex(answers, /^sr-\d+-.{2}$/);
   const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
   const srNumbers = [...new Set(srNumbersAll)];
   const srNumbersCsv = srNumbers.join(",");
-  const userId = crypto.createHash("sha256").update(phone).digest("hex");
+
+  // No longer unique by phone, since we don't want to overwrite if multiple
+  // responses use the same phone (for tenants that don't want to share phone a
+  // neighbor can give theirs)
+  const userId = crypto
+    .createHash("sha256")
+    .update(phone + submittedAt)
+    .digest("hex");
 
   const issuesNotes = getIssuesNotes(answers);
   const checklistTitle = "UPT 311 Checklist";
@@ -230,11 +301,11 @@ export const handleUptResponse = async (
     hpdBuildingId: hpdBuildingId,
     checklistUrl: checklistUrl,
     issuesNotes: issuesNotes,
-    // TODO: add to existing list don't overwrite
+    pets: pets,
     srNumbers: srNumbers,
   };
 
-  await addOrUpdateUptTenantDb(ddbDocClient, dbAttributes);
+  await addUptTenantDb(ddbDocClient, dbAttributes);
 
   const textitFields = {
     upt_311_start_date: submittedAt,
