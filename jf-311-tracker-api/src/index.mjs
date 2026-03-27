@@ -157,6 +157,7 @@ const dbUserToSheetsRow = (user) => {
     Apartment: user.apartment,
     "HPD Building ID": user.hpdBuildingId,
     "HPD Online": `https://hpdonline.nyc.gov/hpdonline/building/${user.hpdBuildingId}`,
+    Pets: user.pets,
     "311 SR Numbers": user.srNumbers.join(", "),
     "Issues Checklist": user.checklistUrl,
   };
