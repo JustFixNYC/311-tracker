@@ -126,6 +126,7 @@ const ADDRESS_BUILDING_ID_MAP = {
   "26 Joralemon Street, Brooklyn": "808617",
   "28 Joralemon Street, Brooklyn": "808617",
   "32 Joralemon Street, Brooklyn": "",
+  "441 Convent Avenue, Manhattan": "10007",
 };
 
 const getHpdBuildingId = (address) => {
@@ -252,18 +253,23 @@ export const handleUptResponse = async (
   const hpdBuildingId = getHpdBuildingId(address);
   const languageAnswer = findAnswerByRefRegex(answers, /^language$/)?.choice
     ?.label;
-  const petsChoices = findAnswerByRefRegex(answers, /^pets-.{2}$/)?.choices
-    ?.labels;
+  const petsChoices =
+    findAnswerByRefRegex(answers, /^pets-.{2}$/)?.choices?.labels || [];
   const petsOther = findAnswerByRefRegex(answers, /^pets-other-.{2}$/)?.text;
-  const pets = [...petsChoices, petsOther]
-    .map((pet) => {
-      if (!pet || ["Other", "Otro", "Lòt"].includes(pet)) return;
-      if (["Perro(s)", "Dog(s)", "Chen"].includes(pet)) return "Dog(s)";
-      if (["Gato(s)", "Chat", "Cat(s)"].includes(pet)) return "Cat(s)";
-      return pet;
-    })
-    .filter(Boolean)
-    .join(",");
+  let pets;
+  if (!!petsChoices || !!petsOther) {
+    pets = [...petsChoices, petsOther]
+      .map((pet) => {
+        if (!pet || ["Other", "Otro", "Lòt"].includes(pet)) return;
+        if (["Perro(s)", "Dog(s)", "Chen"].includes(pet)) return "Dog(s)";
+        if (["Gato(s)", "Chat", "Cat(s)"].includes(pet)) return "Cat(s)";
+        return pet;
+      })
+      .filter(Boolean)
+      .join(",");
+  } else {
+    pets = "";
+  }
   const language3 = toTextitLanguageCode(languageAnswer);
   const srAnswers = filterAnswersByRefRegex(answers, /^sr-\d+-.{2}$/);
   const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
