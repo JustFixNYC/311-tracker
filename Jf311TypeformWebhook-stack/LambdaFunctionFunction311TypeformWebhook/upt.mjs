@@ -1,4 +1,5 @@
-import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import crypto from "node:crypto";
+import { PutCommand, UpdateCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import {
   findAnswerByRefRegex,
   filterAnswersByRefRegex,
@@ -100,23 +101,90 @@ const ADDRESS_BUILDING_ID_MAP = {
   "86-20 Park Lane South, Queens": "686953",
   "87-50 Kingston Place, Queens": "671254",
   "63-70 Austin Street, Queens": "629716",
+  "3657 Broadway, Manhattan": "8101",
+  "3647 Broadway, Manhattan": "8097",
+  "961 Washington Ave, Brooklyn": "388952",
+  "671 West 193 Street, Manhattan": "43647",
+  "251 Sherman Ave, Manhattan": "27603",
+  "35 Hillside Ave, Manhattan": "22840",
+  "993 Carroll Street, Brooklyn": "218226",
+  "10 Columbia Place, Brooklyn": "1014563",
+  "40 Columbia Place, Brooklyn": "224141",
+  "2 Columbia Place, Brooklyn": "807986",
+  "4 Columbia Place, Brooklyn": "807986",
+  "6 Columbia Place, Brooklyn": "807986",
+  "30 Joralemon Street, Brooklyn": "807986",
+  "8 Columbia Place, Brooklyn": "807988",
+  "28 Columbia Place, Brooklyn": "807987",
+  "30 Columbia Place, Brooklyn": "1014557",
+  "10 Columbia Place, Brooklyn": "1014563",
+  "14 Columbia Place, Brooklyn": "1009160",
+  "16 Columbia Place, Brooklyn": "807985",
+  "20 Joralemon Street, Brooklyn": "808617",
+  "22 Joralemon Street, Brooklyn": "808617",
+  "24 Joralemon Street, Brooklyn": "808617",
+  "26 Joralemon Street, Brooklyn": "808617",
+  "28 Joralemon Street, Brooklyn": "808617",
+  "32 Joralemon Street, Brooklyn": "",
+  "441 Convent Avenue, Manhattan": "10007",
+  "40-25 Hampton Street, Queens": "661475",
+  "40-35 Hampton Street, Queens": "661479",
+  "40-45 Hampton Street, Queens": "661482",
 };
 
 const getHpdBuildingId = (address) => {
   return ADDRESS_BUILDING_ID_MAP[address] || "";
 };
 
+const getUserByPhone = async (ddbDocClient, phone) => {
+  const params = {
+    TableName: process.env.DB_TABLE,
+    IndexName: process.env.DB_GSI_PHONE_NAME,
+    KeyConditionExpression: `phone = :gsi_val`,
+    ExpressionAttributeValues: {
+      ":gsi_val": phone,
+    },
+  };
+  try {
+    const data = await ddbDocClient.send(new QueryCommand(params));
+    console.log("User by phone:", JSON.stringify(data, null, 2));
+    if (!data.Items || data.Items.length === 0) {
+      return undefined;
+    }
+    return data.Items[0];
+  } catch (err) {
+    console.error("Unable to query GSI. Error:", err);
+  }
+};
+
 const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
+  const user = await getUserByPhone(ddbDocClient, data.phone);
+
+  // If user exists update using their id, otherwise use newly generated id
+  // if user exists add new SR numbers to existing list, otherwise use new set
+  // all other fields get overwritten for now
+  let userId, srNumbers;
+  if (!!user?.id) {
+    userId = user.id;
+    const allSrNumbers = [...data.srNumbers, ...user.srNumbers];
+    const uniqueSrNumbers = [...new Set(allSrNumbers)].filter((x) => !!x);
+    srNumbers = uniqueSrNumbers;
+  } else {
+    userId = data.userId;
+    srNumbers = data.srNumbers;
+  }
+
   const params = {
     TableName: process.env.DB_TABLE,
     Key: {
-      phone: data.phone, // Primary Key of the item to update
+      id: userId, // Primary Key of the item to update
     },
     // Defines how to modify attributes
     UpdateExpression:
-      "set fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss",
+      "set phone = :p, fullName = :fn, language3 = :l, org = :o, address = :addr, apartment = :apt, hpdBuildingId = :hpdid, checklistUrl = :checkurl, issuesNotes = :iss, srNumbers = :sr",
     ExpressionAttributeValues: {
       // Placeholder values for the update
+      ":p": data.phone,
       ":fn": data.name,
       ":l": data.language3,
       ":o": "upt",
@@ -125,15 +193,48 @@ const addOrUpdateUptTenantDb = async (ddbDocClient, data) => {
       ":hpdid": data.hpdBuildingId,
       ":checkurl": data.checklistUrl,
       ":iss": data.issuesNotes,
+      ":sr": srNumbers,
     },
     ReturnValues: "UPDATED_NEW", // Returns the new values of the updated attributes
   };
 
   try {
-    const resp = await ddbDocClient.send(new UpdateCommand(params));
+    const resp = await ddbDocClient.send(new PutCommand(params));
     console.log("UpdateItem succeeded:", resp);
   } catch (err) {
     console.error("Unable to update item. Error:", err);
+  }
+};
+
+const addUptTenantDb = async (ddbDocClient, data) => {
+  // We are now allowing duplicates by phone number, since some tenants don't
+  // want to provide their phone number and so others have been using their own
+  // phone number and that's overwritten information.
+
+  const params = {
+    TableName: process.env.DB_TABLE,
+    Item: {
+      id: data.userId,
+      // Placeholder values for the update
+      phone: data.phone,
+      fullName: data.name,
+      language3: data.language3,
+      org: "upt",
+      address: data.address,
+      apartment: data.apartment,
+      hpdBuildingId: data.hpdBuildingId,
+      checklistUrl: data.checklistUrl,
+      issuesNotes: data.issuesNotes,
+      pets: data.pets,
+      srNumbers: data.srNumbers,
+    },
+  };
+
+  try {
+    const resp = await ddbDocClient.send(new PutCommand(params));
+    console.log("Add DB Record succeeded:", resp);
+  } catch (err) {
+    console.error("Unable to add DB record. Error:", err);
   }
 };
 
@@ -155,11 +256,36 @@ export const handleUptResponse = async (
   const hpdBuildingId = getHpdBuildingId(address);
   const languageAnswer = findAnswerByRefRegex(answers, /^language$/)?.choice
     ?.label;
+  const petsChoices =
+    findAnswerByRefRegex(answers, /^pets-.{2}$/)?.choices?.labels || [];
+  const petsOther = findAnswerByRefRegex(answers, /^pets-other-.{2}$/)?.text;
+  let pets;
+  if (!!petsChoices || !!petsOther) {
+    pets = [...petsChoices, petsOther]
+      .map((pet) => {
+        if (!pet || ["Other", "Otro", "Lòt"].includes(pet)) return;
+        if (["Perro(s)", "Dog(s)", "Chen"].includes(pet)) return "Dog(s)";
+        if (["Gato(s)", "Chat", "Cat(s)"].includes(pet)) return "Cat(s)";
+        return pet;
+      })
+      .filter(Boolean)
+      .join(",");
+  } else {
+    pets = "";
+  }
   const language3 = toTextitLanguageCode(languageAnswer);
   const srAnswers = filterAnswersByRefRegex(answers, /^sr-\d+-.{2}$/);
   const srNumbersAll = srAnswers.map((x) => format311SrNumber(x.text));
   const srNumbers = [...new Set(srNumbersAll)];
   const srNumbersCsv = srNumbers.join(",");
+
+  // No longer unique by phone, since we don't want to overwrite if multiple
+  // responses use the same phone (for tenants that don't want to share phone a
+  // neighbor can give theirs)
+  const userId = crypto
+    .createHash("sha256")
+    .update(phone + submittedAt)
+    .digest("hex");
 
   const issuesNotes = getIssuesNotes(answers);
   const checklistTitle = "UPT 311 Checklist";
@@ -170,10 +296,12 @@ export const handleUptResponse = async (
     checklistTitle,
     checklistSubtitle,
     "upt",
+    userId,
   );
 
   const dbAttributes = {
     phone: phone,
+    userId: userId,
     language3: language3,
     org: "upt",
     name: name,
@@ -182,16 +310,18 @@ export const handleUptResponse = async (
     hpdBuildingId: hpdBuildingId,
     checklistUrl: checklistUrl,
     issuesNotes: issuesNotes,
+    pets: pets,
     srNumbers: srNumbers,
   };
 
-  await addOrUpdateUptTenantDb(ddbDocClient, dbAttributes);
+  await addUptTenantDb(ddbDocClient, dbAttributes);
 
   const textitFields = {
     upt_311_start_date: submittedAt,
     checklist_311_url: checklistUrl,
     hpd_building_id: hpdBuildingId,
     sr_311_numbers: srNumbersCsv,
+    user_id_311_tracker: userId,
   };
 
   await textitClient.addOrUpdateContact(phone, name, language3, textitFields);

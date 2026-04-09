@@ -1,0 +1,126 @@
+{
+    "resource": "/srNumbers",
+    "path": "/srNumbers",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-ASN": "14618",
+        "CloudFront-Viewer-Country": "US",
+        "Content-Type": "application/json",
+        "Host": "en6bg1wu8d.execute-api.us-east-1.amazonaws.com",
+        "Postman-Token": "3cad2db6-245a-4366-b326-f437fb9f3d83",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "Via": "1.1 3eafe3d97ea450434f79b0d32e70a916.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "GwGhn-verAdJSA4Mv5BAyN2gsUNXgO-pZs3KV9nWFeo8RrdYVQkr9A==",
+        "X-Amzn-Trace-Id": "Root=1-69a62ef4-4626c1502fd23f9a2681d217",
+        "X-Forwarded-For": "2603:7000:863e:f399:81ea:ee72:3bf5:827a, 54.86.50.139, 18.68.30.230",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Cache-Control": [
+            "no-cache"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-ASN": [
+            "14618"
+        ],
+        "CloudFront-Viewer-Country": [
+            "US"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Host": [
+            "en6bg1wu8d.execute-api.us-east-1.amazonaws.com"
+        ],
+        "Postman-Token": [
+            "3cad2db6-245a-4366-b326-f437fb9f3d83"
+        ],
+        "User-Agent": [
+            "PostmanRuntime/7.51.1"
+        ],
+        "Via": [
+            "1.1 3eafe3d97ea450434f79b0d32e70a916.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "GwGhn-verAdJSA4Mv5BAyN2gsUNXgO-pZs3KV9nWFeo8RrdYVQkr9A=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-69a62ef4-4626c1502fd23f9a2681d217"
+        ],
+        "X-Forwarded-For": [
+            "2603:7000:863e:f399:81ea:ee72:3bf5:827a, 54.86.50.139, 18.68.30.230"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "gxj4h0",
+        "resourcePath": "/srNumbers",
+        "httpMethod": "POST",
+        "extendedRequestId": "ZnxGVG8nIAMEiBw=",
+        "requestTime": "03/Mar/2026:00:44:36 +0000",
+        "path": "/Prod/srNumbers",
+        "accountId": "609870412389",
+        "protocol": "HTTP/1.1",
+        "stage": "Prod",
+        "domainPrefix": "en6bg1wu8d",
+        "requestTimeEpoch": 1772498676931,
+        "requestId": "059a04f5-ad7a-441c-b51c-d62797de06bd",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "54.86.50.139",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "PostmanRuntime/7.51.1",
+            "user": null
+        },
+        "domainName": "en6bg1wu8d.execute-api.us-east-1.amazonaws.com",
+        "deploymentId": "iv25ub",
+        "apiId": "en6bg1wu8d"
+    },
+    "body": "{\n    \"phone\": \"+13476595423\",\n    \"srNumbers\": [\n        \"311-12345678\",\n        \"311-87654321\"\n    ]\n}",
+    "isBase64Encoded": false
+}

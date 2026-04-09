@@ -20,16 +20,21 @@ Resources:
       RecursiveLoop: Terminate
       Environment:
         Variables:
-          DB_TABLE: Users311Tracker
+          DB_TABLE: Jf311TrackerUsers
           UPT_FORM_ID: UrIJg4oD
           UPT_TEXTIT_GROUP: 13099c82-e3bf-42bc-b385-7ed8c05506de
           TYPEFORM_SECRET_NAME: Jf311TypeformWebhookSecret
           TEXTIT_SECRET_NAME: JFTextitToken
           AWS_REGION_NAME: us-east-1
           CHECKLIST_BUCKET: justfix-311-checklists
+          DB_GSI_PHONE_NAME: gsi_phone
       EphemeralStorage:
         Size: 512
       Architectures:
         - x86_64
       Tracing: PassThrough
       CodeUri: LambdaFunctionFunction311TypeformWebhook
+      Policies:
+        # Give Create/Read/Update/Delete Permissions to the SampleTable
+        - DynamoDBCrudPolicy:
+            TableName: Jf311TrackerUsers
