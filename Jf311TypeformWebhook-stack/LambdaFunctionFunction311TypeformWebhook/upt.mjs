@@ -127,6 +127,9 @@ const ADDRESS_BUILDING_ID_MAP = {
   "28 Joralemon Street, Brooklyn": "808617",
   "32 Joralemon Street, Brooklyn": "",
   "441 Convent Avenue, Manhattan": "10007",
+  "40-25 Hampton Street, Queens": "661475",
+  "40-35 Hampton Street, Queens": "661479",
+  "40-45 Hampton Street, Queens": "661482",
 };
 
 const getHpdBuildingId = (address) => {
